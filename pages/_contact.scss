@@ -4,9 +4,16 @@
 
   &__flex{
     border: blue  solid;
+    display: flex;
+    flex-direction: column;
+
     }
   
     &__champs{
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      flex-wrap: wrap;
       border: yellow  solid;
 
       label{
@@ -16,6 +23,17 @@
       input{
         background-color: pink;
       }
+
+    &__message{
+      
+      label{
+        color: goldenrod;
+      }
+
+      input{
+        background-color: gold;
+      }
+    }
   }
 
 }
