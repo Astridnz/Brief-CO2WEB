@@ -1,51 +1,69 @@
-.mode-demploi{
-  border: red solid;
-  align-items: center;
+main{
+  // laisse des marges, aère le contenu
+  width: 80%;
+  margin: auto;
+  // laisse de la place pour le header
+  margin-top: 7em;
 
-  
-  &__flex{
-    border: yellow  solid;
-    display: flex;
-    justify-content: space-between;
-    
-
+  h1{
+    // ajoute un espace entre le titre et le header
+    margin-top: 3em;
   }
 
-  &__option{
-    border: greenyellow solid;
-    width: 30%;
-    height: auto;
+  .mode-demploi{
+  // prend toute la hauteur de la page
+    height: 70vh;
+    // place le contenu au centre de la page
     display: flex;
-    flex-direction: column;
-    margin: 10em;
+    justify-content: center;
+    align-items: center;
 
-    &:nth-child(2) {
-      border: 2px solid $border-color; /* Bordure noire de 2px */
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ombre */
-      border-radius: 5%;
-    }
-
-
-    img{
-      border: blue solid;
-      height: 12em;
-      width: auto;
-      margin: 2em;
-    }
-
-    h2 {
-      border: violet  solid;
-      text-align: center;
     
-
+    &__flex{
+      // les espaces entre les 3 divs option sont égaux
+      display: flex;
+      justify-content: space-around;
     }
 
-    .corpsdetexte{
-      border: orange  solid;
-      text-align: center;
-      width: 90%;
-      margin: auto;
-      padding-bottom: 2em;
+    &__option{
+      padding: 3em;
+      gap: 2em;
+      // ajuste la largeur et la hauteur s'ajuste automatiquement
+      width: 20%;
+      height: auto;
+      // aligne le logo titre et texte verticalement
+      display: flex;
+      flex-direction: column;
+      
+
+      &:nth-child(2) {
+        // ombre sur le calculateur magique
+        box-shadow: 0px 0px 6px 6px rgba(202, 201, 201, 0.2); /* Ombre */
+        border-radius: 5%;
+      }
+
+
+      img{
+      // ajuste la taille des images
+        height: 10em;
+        padding: 5em 5em 0chem 5em ;
+      }
+
+      h2 {
+        // centre le titre
+        text-align: center;
+        margin-top: 1em;
+        padding-top: 0;
+      }
+
+      .corpsdetexte{
+      // centre le corps de texte
+        text-align: center;
+      // aère le corps de texte
+        width: 90%;
+        margin: auto;
+        padding-bottom: 2em;
+      }
     }
   }
 }
