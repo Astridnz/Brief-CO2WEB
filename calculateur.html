@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
   <title>Calculateur</title>
 </head>
 
-<body>
+<body class="icônes">
   <header>
-      
+
     <div class="header-flex">
 
       <img src="ressources/logo/CO2-logo.svg" alt="logo CO2WEB">
@@ -32,12 +35,46 @@
 
     </div>
 
-</header>
+  </header>
 
 
-<h1>Roulez vert à Marseille</h1>
+  <h1>Calculateur d'émissions de CO2 <br> Trajets domicile/ travail en voiture </h1>
+  <div class="centrage">
+    <!-- <div id="feuille_gauche">
+      <img src="/ressources/images/background-feuille1-calculateur.svg" alt="feuille_vectorielle">
+    </div>
 
+    <div id="feuille_droite">
+      <img src="/ressources/images/background-feuille-calculateur.svg" alt="">
+    </div>
+    <div id="feuille_gauche_2">
+      <img src="/ressources/images/background-trifeuilles-calculateur.svg" alt="">
+    </div> -->
 
+    <form action="#">
+      <div class="distance">
+        <label for="distance">Votre Distance parcourue par jour (en kilomètres) :</label>
+        <br>
+        <input type="text" id="distance" placeholder="www.exemple.com">
+      </div>
+      <br>
+      <div class="jours">
+        <label for="jours_travaillés">Nombres de jours travaillés par semaine :</label>
+        <br>
+        <input type="text" id="jours_travaillés" placeholder="Nombre">
+      </div>
+      <br>
+      <div class="flex_boutons">
+        <div class="premier_bouton">
+          <input class="button_1" type="button" value="Commencer">
+        </div>
+      </div>
+      <br>
+      <p class="petit_info">En utilisant cette calculatrice d'émission de carbone, vous acceptez que les informations
+        soient inscrites et stokées dans notre base de donnée publique. </p>
+    </form>
 
+  </div>
 </body>
+
 </html>
