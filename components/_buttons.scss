@@ -51,6 +51,35 @@
 }
 
 
+.button_3 {
+  color: $background-color;
+  background: linear-gradient(to right, $lighter-green-color, $dark-green-color);
+  border-color: $medium-green-color;
+  font-family: $font-family-text;
+  font-size: $font-size-text;
+  font-weight: 500;
+  border-radius: 40px;
+  box-shadow: $lighter-green-color;
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  margin-top:3%;
+  margin-left: 400px;
+  margin-bottom: 20px;
+
+  &:hover{
+
+  background: $dark-green-color;
+  color: $background-color;
+
+}
+}
+
+
 // <div class="flex_boutons">
 //           <div class="premier_bouton">
 //             <input class="button_1" type="button" value="Commencer">

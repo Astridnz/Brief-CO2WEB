@@ -26,11 +26,13 @@ h1{
   text-align: center;
   font-family: $font-family-text;
   margin-left: 5%;
+  width: 20%;
 
 }
 
 form{
-  box-shadow: 0em 0em 5em 0em;
+  border-radius: 20px;
+  box-shadow: 0em 0em 1em 0em;
   padding: 5%;
 
 }
@@ -42,17 +44,18 @@ form{
 
 label{
   margin-left: 10%;
-  font-family: $font-family-text;
+  font-family: $font-family-title;
+  font-size: $font-size-title-2;
 }
 
 #distance{
 
   margin-top: 1%;
-  width: 600px;
+  width: 800px;
 }
 
 #jours_travaillés{
-
+  width: 800px;
   margin-top: 1%;
 }
 
@@ -63,11 +66,4 @@ input{
   border-bottom: ridge;
   border-left: none;
   border-right: none;
-}
-
-button{
-  margin-top:10%;
-  margin-left: 40px;
-  margin-bottom: 20px;
-
 }
