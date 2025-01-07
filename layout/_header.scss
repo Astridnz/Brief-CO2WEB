@@ -1,1 +1,62 @@
 /* --------------------------------- Header --------------------------------- */
+header{
+  // caratéristiques principales du header
+  display: flex;
+  align-items: center;
+  padding: 1em 5em;
+  background-color:$background-color;
+  // en dessous du header
+  border-bottom: 1px solid #e0e0e0;
+  // ombre de la ligne
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .header-flex{
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    // caractéristiques du logo
+    img{
+      width: 10em;
+      height: auto;
+      margin-right: 1em;
+    }
+  }
+
+  // caractériqtiues principales de la nav qui comprend la liste et les liens
+  nav{
+    margin-left: 2em;
+
+    // caractéristiques de la liste
+    ul{
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      }
+
+    li{
+      margin-right: 2em;
+      
+      }
+
+    // caractéristiques des liens
+    a{
+        text-decoration: none;
+        color: $darker-green-color;
+        font-size: $font-size-large;
+
+    // caractéristiques des liens au survol de la souris
+        &:hover{
+          text-decoration: underline;
+          color: $darker-green-color;
+        }
+
+    // caractéristiques des liens au clic
+        &:active{
+          font-weight: bold;
+        }
+
+      }
+    }
+  }
