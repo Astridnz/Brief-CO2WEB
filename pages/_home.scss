@@ -1,1 +1,64 @@
 /* --------------------------------- Home specific styles --------------------------------- */
+body{ 
+  background-image: url(/ressources/images/background-homepage.svg);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-image: -moz-linear-gradient($lighter-green-color);
+  background-size: 40%;
+}
+
+.cadre_body{
+  margin-left: 5%;
+  margin-top: 8%;
+  padding: 2%;
+}
+
+.face_à_face{
+
+  display: flex;
+}
+
+.flex_boutons{
+
+display: flex;
+
+}
+
+.premier_bouton{
+
+  margin-right: 4%;
+  font-family: $font-family-title;
+  font-size: $font-size-text;
+  font-weight: 500;
+}
+
+.deuxième_bouton
+{
+
+margin-left: 4%;
+font-family: $font-family-title;
+font-size: $font-size-text;
+font-weight: 500;
+}
+
+.text{
+
+margin-bottom: 8%;
+
+}
+
+.h1{
+
+  font-family: $font-family-title;
+  margin-top: 20%;
+  font-size: $font-size-title-1;
+  font-size: xx-large;
+  
+}
+
+.corpsdetexte{
+
+font-family: $font-family-title;
+font-size: $font-size-text;
+font-weight: 500;
+}
