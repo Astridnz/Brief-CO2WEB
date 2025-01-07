@@ -1,5 +1,27 @@
 /* --------------------------------- Footer --------------------------------- */
-.nav{
-    $darker-green-color: #019961 /* couleur des liens footer */
 
+
+/*creation du bord rouge pour les liens*/
+.flex-container{
+    border: red solid;
+}
+
+
+/* couleur des liens du footer */
+a{
+   color: $darker-green-color 
+}
+
+
+/*Suppression puces liste*/
+ul{
+    list-style-type:none;
+}
+
+
+/*creation flexbox de la nav du bas*/
+.flex-container{
+    display:flex;
+ flex-direction: row-reverse;
+ 
 }
