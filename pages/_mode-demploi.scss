@@ -1,0 +1,51 @@
+.mode-demploi{
+  border: red solid;
+  align-items: center;
+
+  
+  &__flex{
+    border: yellow  solid;
+    display: flex;
+    justify-content: space-between;
+    
+
+  }
+
+  &__option{
+    border: greenyellow solid;
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 10em;
+
+    &:nth-child(2) {
+      border: 2px solid $border-color; /* Bordure noire de 2px */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ombre */
+      border-radius: 5%;
+    }
+
+
+    img{
+      border: blue solid;
+      height: 12em;
+      width: auto;
+      margin: 2em;
+    }
+
+    h2 {
+      border: violet  solid;
+      text-align: center;
+    
+
+    }
+
+    .corpsdetexte{
+      border: orange  solid;
+      text-align: center;
+      width: 90%;
+      margin: auto;
+      padding-bottom: 2em;
+    }
+  }
+}

@@ -1,14 +1,24 @@
 /* --------------------------------- Header --------------------------------- */
 header{
   // caratéristiques principales du header
+
+  // le header reste fixe en haut de la page
+  position: fixed;
+  top: 0;
+  // le header s'étend sur toute la largeur de la page
+  left: 0;
+  right: 0;
+
+
   display: flex;
   align-items: center;
   padding: 1em 5em;
   background-color:$background-color;
   // en dessous du header
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid $border-color;
   // ombre de la ligne
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
 
   .header-flex{
     display: flex;
