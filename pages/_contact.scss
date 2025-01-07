@@ -1,1 +1,24 @@
 /* --------------------------------- Contact specific styles --------------------------------- */
+
+.page-contact{
+    // laisse de la place pour le header
+    margin-top: 7em;
+
+  border: red solid;
+
+  .contact__flex{
+    @include centrage-avec-hauteur;
+    border: yellowgreen solid;
+  
+    form{
+      border: pink  solid;
+      
+      label{
+        border: yellow  solid;
+      }
+      input{
+        border: cyan  solid;
+      }
+  }
+}
+}

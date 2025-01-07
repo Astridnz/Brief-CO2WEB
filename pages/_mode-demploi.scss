@@ -11,12 +11,7 @@
   }
 
   .mode-demploi{
-  // prend toute la hauteur de la page
-    height: 70vh;
-    // place le contenu au centre de la page
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  @include centrage-avec-hauteur;
 
     
     &__flex{
