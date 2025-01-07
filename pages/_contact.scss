@@ -1,24 +1,29 @@
 /* --------------------------------- Contact specific styles --------------------------------- */
-
-.page-contact{
-    // laisse de la place pour le header
-    margin-top: 7em;
-
+.contact{
   border: red solid;
 
-  .contact__flex{
-    @include centrage-avec-hauteur;
-    border: yellowgreen solid;
+  &__flex{
+    border: blue  solid;
+    }
   
-    form{
-      border: pink  solid;
-      
+    &__champs{
+      border: yellow  solid;
+
       label{
-        border: yellow  solid;
+        color: green;
       }
+
       input{
-        border: cyan  solid;
+        background-color: pink;
       }
   }
+
 }
-}
+
+// ----------media query associé--------------------------
+// @media (max-width: 600px) {
+//   .contact__champs, 
+//   .contact__champs__message {
+//     flex: 1 1 100%; // Tout passe à une colonne sur mobile
+//   }
+// }
