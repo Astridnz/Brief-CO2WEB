@@ -1,47 +1,52 @@
-/* --------------------------------- Contact specific styles --------------------------------- */
-.contact{
+.contact {
   border: red solid;
 
-  &__flex{
-    border: blue  solid;
+  h1{
+    text-align: center;
+  }
+  &__flex {
+    border: blue solid;
     display: flex;
     flex-direction: column;
-
-    }
-  
-    &__champs{
-      display: flex;
-      flex-direction: column;
-      width: 50%;
-      flex-wrap: wrap;
-      border: yellow  solid;
-
-      label{
-        color: green;
-      }
-
-      input{
-        background-color: pink;
-      }
-
-    &__message{
-      
-      label{
-        color: goldenrod;
-      }
-
-      input{
-        background-color: gold;
-      }
-    }
+    width: 60%;
+    margin: auto;
   }
 
-}
+  &__info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 
-// ----------media query associé--------------------------
-// @media (max-width: 600px) {
-//   .contact__champs, 
-//   .contact__champs__message {
-//     flex: 1 1 100%; // Tout passe à une colonne sur mobile
-//   }
-// }
+  }
+
+
+
+  &__champs {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 1rem;
+
+    
+    label {
+    font-family: $font-family-text;
+    padding-top: 1em;
+    }
+
+    input {
+    font-family: $font-family-text;
+    font-size: $font-size-text;
+    padding-bottom: 1em;
+    padding-top: 2em;
+    border-style: none none solid none;
+    border-color: $border-color;
+    color: $border-color;
+
+    }
+
+    &__message{
+      border: yellowgreen solid; 
+    } 
+  }
+}
