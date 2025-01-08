@@ -1,0 +1,26 @@
+
+    /*Creation bord jaune texte*/
+.moitie-texte{
+    border: yellow solid 1px;
+
+    /*Taille texte*/
+  width: 50%;  
+  height: 100%;
+}
+
+
+    /*positionnement image droite*/
+// img{
+//         float: right;
+//        /* width: 60%;
+//         height: 10%;*/
+//     }
+
+    /*ajustement taille background image*/
+.background-image-apropos{
+    border: red solid;
+    height: 98vh;
+    background: url(/ressources/images/tente-camping.svg) right -20em bottom -10em;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
