@@ -1,7 +1,14 @@
 .page-mode-demploi{
+
   // laisse des marges, aère le contenu
   width: 80%;
   margin: auto;
+  height: 85vh;
+    // pour positionner les images sur backcground : url + unités
+  background: url(/ressources/images/bubbles-bottom-left.svg) bottom 6em left 32em ,
+              url(/ressources/images/bubbles-top-right.svg) top 7em right 28em;
+  background-repeat: no-repeat;
+  background-size: 10% ;
 
   h1{
     // ajoute un espace entre le titre et le header
@@ -19,7 +26,7 @@
     }
 
     &__option{
-      padding: 3em;
+      padding: 2em 3em 2em 3em;
       gap: 2em;
       // ajuste la largeur et la hauteur s'ajuste automatiquement
       width: 20%;
@@ -30,9 +37,12 @@
       
 
       &:nth-child(2) {
+        background: url(/ressources/images/quart-de-rond-calculateur-magique.svg) top right;
+        background-repeat: no-repeat;
         // ombre sur le calculateur magique
         box-shadow: 0px 0px 6px 6px rgba(202, 201, 201, 0.2); /* Ombre */
         border-radius: 2em;
+        background-color: $background-color;
       }
 
 
