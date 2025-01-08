@@ -6,21 +6,17 @@
     /*Taille texte*/
   width: 50%;  
   height: 100%;
+    
+    /*marge haute*/
+    margin-top: 20%;
 }
 
-
-    /*positionnement image droite*/
-// img{
-//         float: right;
-//        /* width: 60%;
-//         height: 10%;*/
-//     }
 
     /*ajustement taille background image*/
 .background-image-apropos{
     border: red solid;
-    height: 98vh;
+    height: 102vh;
     background: url(/ressources/images/tente-camping.svg) right -20em bottom -10em;
     background-repeat: no-repeat;
-    background-size: 80%;
+    background-size: 75%;
 }
