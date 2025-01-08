@@ -1,52 +1,57 @@
 .contact {
-  border: red solid;
+
 
   h1{
     text-align: center;
   }
-  &__flex {
-    border: blue solid;
+
+  &-flex {
+
     display: flex;
-    flex-direction: column;
-    width: 60%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
     margin: auto;
+    box-shadow: 0px 0px 6px 6px rgba(202, 201, 201, 0.2); /* Ombre */
+    border-radius: 2em;
+    padding: 0em  4em 2em 4em;
   }
 
   &__info {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    width: 100%;
+    gap: 2em;
 
+    label{
+      margin-top: 3em;
+    }
+
+    input{
+      border-style : none none solid none;
+      border-color: $border-color;
+      margin-top: 2em;
+
+    }
+    
   }
 
-
-
-  &__champs {
+  &__info__champs {
     display: flex;
     flex-direction: column;
-    width: 40%;
-    margin: 1rem;
+    width: 50%;
 
+
+    &--fullwidht {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
     
-    label {
-    font-family: $font-family-text;
-    padding-top: 1em;
-    }
 
-    input {
-    font-family: $font-family-text;
-    font-size: $font-size-text;
-    padding-bottom: 1em;
-    padding-top: 2em;
-    border-style: none none solid none;
-    border-color: $border-color;
-    color: $border-color;
-
-    }
-
-    &__message{
-      border: yellowgreen solid; 
-    } 
+  }
+  .button_1{
+    align-self: flex-end; 
+    margin-top: 2em; 
+    margin-left: auto; 
   }
 }
