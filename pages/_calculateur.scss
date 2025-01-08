@@ -27,26 +27,30 @@ h1{
   font-family: $font-family-text;
   margin-left: 5%;
   width: 20%;
-
 }
 
-form{
-  border-radius: 20px;
-  box-shadow: 0em 0em 1em 0em;
-  padding: 5%;
 
-}
 
 .centrage{
   @include centrage-avec-hauteur;
   border-radius: 2%
+
+  form{
+    border-radius: 20px;
+    box-shadow: 0em 0em 1em 0em;
+    padding: 5%;
+  }
+
+
+  label{
+    margin-left: 10%;
+    font-family: $font-family-title;
+    font-size: $font-size-title-2;
+  }
+  
+
 }
 
-label{
-  margin-left: 10%;
-  font-family: $font-family-title;
-  font-size: $font-size-title-2;
-}
 
 #distance{
 
