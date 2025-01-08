@@ -1,27 +1,50 @@
 /* --------------------------------- Footer --------------------------------- */
 
 
-/*creation du bord rouge pour les liens*/
+footer{
+// le footer reste fixe en bas de la page
+position: fixed;
+bottom: 0;
+// le footer s'étend sur la largeur de la page moins 10 dte et gche
+left: 10px;
+right: 10px;
+}
+
 .flex-container{
-    border: red solid;
-}
+/*creation du bord rouge pour les liens
+    border: red solid;*/
 
-
-/* couleur des liens du footer */
-a{
-   color: $darker-green-color 
-}
-
-
-/*Suppression puces liste*/
-ul{
-    list-style-type:none;
-}
-
-
-/*creation flexbox de la nav du bas*/
-.flex-container{
+/*creation flexbox du footer*/
     display:flex;
- flex-direction: row-reverse;
- 
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 10px;
+
+/*creation border top de la flexbox*/
+    border-top: 2px solid $lighter-green-color;
+
+/*creation marges haute et basse des liens*/
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
+
+
+a{
+/*couleur des liens du footer*/
+   color: $darker-green-color;
+
+/*marge entre les liens*/
+    padding: 10px;
+
+/*Enleve le soulignement par défaut du lien*/
+    text-decoration: none;
+}
+
+
+a:hover {
+/* Ajout d'un soulignement au passage de la souris*/
+    text-decoration: underline;
+}
+
+
+
