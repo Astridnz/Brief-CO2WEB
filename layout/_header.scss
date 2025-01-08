@@ -53,9 +53,6 @@ header{
 
     // caractéristiques des liens
     a{  
-
-      // /!\ !important surpasse toutes les autres priorités
-        color: $darker-green-color !important;
         text-decoration: none;
         font-size: $font-size-text;
 
