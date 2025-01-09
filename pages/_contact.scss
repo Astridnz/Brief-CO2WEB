@@ -3,17 +3,15 @@
 
   height: 80vh;
   // pour positionner les images sur backcground : url + unités
-  background:       url(/ressources/images/background-feuille1-calculateur.svg) top 1rem left -7rem,
+  background:       url(/ressources/images/background-feuille1-calculateur.svg) top 0rem left -7rem,
                     url(/ressources/images/background-feuille2-calculateur.svg)bottom 7rem left -2rem,
-                    url(/ressources/images/rond-creux-vert-darker.svg) top 3rem right 12rem,
-                    url(/ressources/images/rond-creux-vert-medium.svg) top 1rem right 6rem,
-                    url(/ressources/images/rond-creux-vert-light.svg) top 9rem right 9rem,
+                    url(/ressources/images/rond-creux-vert-medium.svg) top 0rem right 1rem,
+                    url(/ressources/images/rond-creux-vert-light.svg) top 8rem right 5rem,
                     url(/ressources/images/background-feuille3-calculateur.svg) bottom 10rem right -4rem;
   background-repeat: no-repeat;
   // redimmensionnement des images
   background-size:  50% 50%,
                     40% 40%,
-                    20% 20%,
                     15% 15%,
                     10% 10%,
                     45% 45%;
@@ -24,11 +22,18 @@
     text-align: center;
   }
 
+  .rond-vert{
+    background-color: $background-color;
+    position: absolute;
+    top: 8em;
+    left: 82em;
+    width: auto;
+    height: 10%;
+    object-fit: contain;
+  }
+
   &-flex {
 
-    background: url(/ressources/images/rond-creux-vert-darker.svg) top -2.3rem right -8rem;
-    background-repeat: no-repeat;
-    background-size: 29% 29%;
 
     display: flex;
     flex-direction: row;
