@@ -1,11 +1,7 @@
-.page-mode-demploi{
-
-  // laisse des marges, aère le contenu
-  width: 80%;
-  margin: auto;
-  height: 85vh;
+.main__mode-demploi{
+width: 80%;
     // pour positionner les images sur backcground : url + unités
-  background: url(/ressources/images/bubbles-bottom-left.svg) bottom 6em left 32em ,
+  background: url(/ressources/images/bubbles-bottom-left.svg) bottom 0em left 32em ,
               url(/ressources/images/bubbles-top-right.svg) top 7em right 28em;
   background-repeat: no-repeat;
   background-size: 10% ;

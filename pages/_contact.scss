@@ -1,13 +1,11 @@
 
 .main__contact{
-
-height: 76vh;
 width: auto;
 // pour positionner les images sur backcground : url + unités
 background:       url(/ressources/images/background-feuille1-calculateur.svg) top 7em left 0em,
                   url(/ressources/images/background-feuille2-calculateur.svg)bottom 10rem left -5rem,
-                  url(/ressources/images/rond-creux-vert-medium.svg) top 7rem right 2rem,
-                  url(/ressources/images/rond-creux-vert-light.svg) top 17rem right 6rem,
+                  url(/ressources/images/rond-creux-vert-medium.svg) top 8rem right 2rem,
+                  url(/ressources/images/rond-creux-vert-light.svg) top 18rem right 6rem,
                   url(/ressources/images/background-feuille3-calculateur.svg) bottom 10rem right -3rem;
 background-repeat: no-repeat;
 // redimmensionnement des images
@@ -21,7 +19,6 @@ background-attachment: fixed;
 
 .contact {
   h1{
-    padding: 2rem;
     text-align: center;
   }
 
@@ -34,12 +31,8 @@ background-attachment: fixed;
   }
 
   &-flex {
-    position: fixed;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 60%;
-    margin: 1rem auto 5rem auto;
+    margin: auto;
     padding: 0 3rem;
     gap: 2rem;
     display: flex;
