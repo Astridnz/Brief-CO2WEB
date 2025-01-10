@@ -1,20 +1,22 @@
 
 .main__calculateur{
-
-  height: 60vh;
+  margin: 6rem 0 0 0;
+  height: auto;
   // pour positionner les images sur backcground : url + unités
-  background:       url(/ressources/images/background-feuille1-calculateur.svg) top 2rem left -17rem,
-                    url(/ressources/images/background-feuille2-calculateur.svg)bottom -10rem left -17rem,
+  background:       url(/ressources/images/background-feuille1-calculateur.svg) top 0rem left -8rem,
+                    url(/ressources/images/background-feuille2-calculateur.svg)bottom 3rem left -3rem,
                     url(/ressources/images/rond-creux-vert-medium.svg) top 0.5rem right 1rem,
-                    url(/ressources/images/rond-creux-vert-light.svg) top 8rem right 5rem,
-                    url(/ressources/images/background-feuille3-calculateur.svg) bottom -8rem right -18rem;
+                    url(/ressources/images/rond-creux-vert-light.svg) top 11rem right 7rem,
+                    url(/ressources/images/background-feuille3-calculateur.svg) bottom 4rem right -8rem;
   background-repeat: no-repeat;
   // redimmensionnement des images
-  background-size:  70% 70%,
-                    60% 60%,
+  background-size:  50% 50%,
+                    40% 40%,
                     20% 20%,
                     10% 10%,
-                    70% 70%;
+                    50% 50%;
+
+                    
 }
 
 .calculateur {
@@ -24,8 +26,8 @@
 
   .rond-vert{
     position: absolute;
-    top: 10em;
-    left: 82em;
+    top: 11em;
+    left: 89em;
     width: auto;
     height: 10%;
     object-fit: contain;
@@ -33,7 +35,7 @@
 
   &-flex {
     width: 60%;
-    margin: auto;
+    margin: 1rem auto 5rem auto;
     padding: 3rem 0;
     gap: 2rem;
     display: flex;
@@ -41,7 +43,7 @@
     flex-wrap: wrap;
     box-shadow: 0px 0px 6px 6px rgba(202, 201, 201, 0.2); /* Ombre */
     border-radius: 2em;
-    background-color: $background-color ;
+    background-color: $background-color;
   }
 
   &__info {
