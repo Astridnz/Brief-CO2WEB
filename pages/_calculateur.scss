@@ -1,26 +1,26 @@
 
 .main__calculateur{
-  margin: 6rem 0 0 0;
-  height: auto;
+  height: 76vh;
   // pour positionner les images sur backcground : url + unités
-  background:       url(/ressources/images/background-feuille1-calculateur.svg) top 0rem left -8rem,
-                    url(/ressources/images/background-feuille2-calculateur.svg)bottom 3rem left -3rem,
-                    url(/ressources/images/rond-creux-vert-medium.svg) top 0.5rem right 1rem,
-                    url(/ressources/images/rond-creux-vert-light.svg) top 11rem right 7rem,
-                    url(/ressources/images/background-feuille3-calculateur.svg) bottom 4rem right -8rem;
+  background:       url(/ressources/images/background-feuille1-calculateur.svg) top 9em left 0em,
+                    url(/ressources/images/background-feuille2-calculateur.svg)bottom 10rem left -5rem,
+                    url(/ressources/images/rond-creux-vert-medium.svg) top 7rem right 4rem,
+                    url(/ressources/images/rond-creux-vert-light.svg) top 17rem right 8rem,
+                    url(/ressources/images/background-feuille3-calculateur.svg) bottom 10rem right 1rem;
   background-repeat: no-repeat;
   // redimmensionnement des images
-  background-size:  50% 50%,
-                    40% 40%,
-                    20% 20%,
+  background-size:  40% 40%,
+                    38% 38%,
+                    15% 15%,
                     10% 10%,
-                    50% 50%;
-
+                    35% 35%;
+  background-attachment: fixed;
                     
 }
 
 .calculateur {
   h1{
+    margin-top: 1em;
     text-align: center;
   }
 
@@ -31,9 +31,14 @@
     width: auto;
     height: 10%;
     object-fit: contain;
+    z-index: 100;
   }
 
   &-flex {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 60%;
     margin: 1rem auto 5rem auto;
     padding: 3rem 0;
@@ -82,7 +87,7 @@
   background-color: $background-color ;
   text-align: center;
   padding: 2rem;
-  width: 55%;
+  width: 65%;
 
   //affiche le popup au milieu de l'écran
   position: fixed;
