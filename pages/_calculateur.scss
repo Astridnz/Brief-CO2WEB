@@ -14,7 +14,7 @@
                     10% 10%,
                     35% 35%;
   background-attachment: fixed;
-                    
+
 }
 
 .calculateur {
@@ -28,6 +28,11 @@
       left: 90em;
       object-fit: contain;
       z-index: 100;
+
+@media screen and (max-width: 360px) {
+    img{ visibility: hidden; }  
+}
+
     }
   
     &-flex {

@@ -7,7 +7,7 @@
   border-color: $medium-green-color;
   border-bottom: none;
   border-right: none;
-  font-family: $font-family-title;
+  font-family: $font-family-text;
   font-size: $font-size-text;
   font-weight: 500;
   border-radius: 40px;
@@ -33,7 +33,6 @@
 
 }
 
-
 .button_2{
   background-color:$background-color;
   border-color: $dark-green-color;
@@ -53,7 +52,7 @@
 
 
 
-&:hover{
+&:hover{ 
 
   background-color: $dark-green-color;
   color: $background-color;
