@@ -1,9 +1,24 @@
 
 /*slide gauche*/
 
+/*ajustement taille et position background image*/
+.image-ordi{
+    height: 65vh;
+    position: relative;
+    background: url(/ressources/images/background-apropos-ordi.png);
+    background-size: 75%;
+    right: 1em;
+    top: 10em;
+}
 
-
-
+/*ajustement position text*/
+.float-right{
+    /*display: flex;
+    justify-content: right;*/
+    margin-left: 60em;
+    margin-right: 10em;
+    margin-top: -20em;
+}
 
 
 
@@ -31,7 +46,7 @@
     /*ajustement taille background image*/
 .background-image-apropos{
     border: red solid;
-    height: 102vh;
+    height: 101vh;
     background: url(/ressources/images/tente-camping.svg) right -20em bottom -10em;
     background-repeat: no-repeat;
     background-size: 75%;
