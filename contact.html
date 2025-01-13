@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
   <title>Contact</title>
 </head>
+
 <body>
 
   <header>
@@ -37,71 +41,70 @@
   <main class="main__contact">
     <section class="contact">
       <h1>Contactez-nous</h1>
-    
+
       <div class="rond-vert">
         <img src="/ressources/images/rond-creux-vert-darker.svg" alt="">
       </div>
 
-        <form class="contact-flex" action="#">
+      <form class="contact__flex" action="#">
 
-          <div class="contact__info">
-            <div class="contact__info__champs">
-              <label class="corpsdetexte" for="prenom">Prénom</label>
-              <input class="corpsdetexte" type="text" name="Prénom" id="prenom" placeholder="Prénom">
-            </div>
-
-            <div class="contact__info__champs">
-              <label class="corpsdetexte" for="nom">Nom</label>
-              <input class="corpsdetexte" type="text" name="Nom" id="nom"  placeholder="Nom">
-            </div>
+        <div class="contact__info">
+          <div class="contact__info__champs">
+            <label class="corpsdetexte" for="prenom">Prénom</label>
+            <input class="corpsdetexte" type="text" name="Prénom" id="prenom" placeholder="Prénom">
           </div>
 
-          <div class="contact__info">
-            <div class="contact__info__champs">
-              <label class="corpsdetexte" for="mail">Votre email</label>
-              <input class="corpsdetexte" type="email" name="Votre email" id="mail" placeholder="votre@email.com">
-            </div>
+          <div class="contact__info__champs">
+            <label class="corpsdetexte" for="nom">Nom</label>
+            <input class="corpsdetexte" type="text" name="Nom" id="nom" placeholder="Nom">
+          </div>
+        </div>
 
-            <div class="contact__info__champs">
-              <label class="corpsdetexte" for="tel">Téléphone</label>
-              <input class="corpsdetexte" type="number" name="Téléphone" id="tel" placeholder="Numéro">
-            </div>
-
-
+        <div class="contact__info">
+          <div class="contact__info__champs">
+            <label class="corpsdetexte" for="mail">Votre email</label>
+            <input class="corpsdetexte" type="email" name="Votre email" id="mail" placeholder="votre@email.com">
           </div>
 
-          <div class="contact__info">
-            <div  class="contact__info__champs--fullwidht">
-              <label class="corpsdetexte" for="message">Votre message</label>
-              <input class="corpsdetexte" type="textarea"  name="Votre message" id="message" placeholder="Message">
-            </div>
+          <div class="contact__info__champs">
+            <label class="corpsdetexte" for="tel">Téléphone</label>
+            <input class="corpsdetexte" type="number" name="Téléphone" id="tel" placeholder="Numéro">
           </div>
 
-              <input class="button_1" type="button" value="Commencer">
 
-        </form>
-      
+        </div>
+
+        <div class="contact__info">
+          <div class="contact__info__champs--fullwidht">
+            <label class="corpsdetexte" for="message">Votre message</label>
+            <input class="corpsdetexte" type="textarea" name="Votre message" id="message" placeholder="Message">
+          </div>
+        </div>
+
+        <input class="button_1" type="button" value="Commencer">
+
+      </form>
+
 
     </section>
   </main>
 
   <footer>
     <div>
-      
-      <!--Creation flexbox du footer-->
-        <div class="flex-container">
-      <!--Ajout des 6 liens-->
-      
+
+      <div class="flex-container">
+
         <div><a class="texte-nav" href="home.html"> Accueil</a></div>
         <div><a class="texte-nav" href="mode-demploi.html">Mode d'emploi</a></div>
         <div><a class="texte-nav" href="trouver-un-velib.html">Trouver un velib</a></div>
         <div><a class="texte-nav" href="calculateur.html">Calculateur</a></div>
         <div><a class="texte-nav" href="a-propos.html">A propos</a></div>
         <div><a class="texte-nav" href="contact.html">Contact</a></div>
-      
-        </div>
-        
+
       </div>
-</footer>
+
+    </div>
+  </footer>
 </body>
+
 </html>

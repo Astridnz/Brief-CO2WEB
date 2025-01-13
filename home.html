@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap"
+    href="https://fonts.googleapis.com/css2?famibox-shadow: $lighter-green-color;ly=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="main.css">
   <title>Accueil</title>
@@ -21,15 +21,25 @@
       <img src="ressources/logo/CO2-logo.svg" alt="logo CO2WEB">
 
       <nav>
+        <div class="off-screen-menu">
 
-        <ul>
-          <li><a class="texte-nav" href="home.html">Accueil</a></li>
-          <li><a class="texte-nav" href="mode-demploi.html">Mode d'emploi</a></li>
-          <li><a class="texte-nav" href="trouver-un-velib.html">Trouver un velib</a></li>
-          <li><a class="texte-nav" href="calculateur.html">Calculateur</a></li>
-          <li><a class="texte-nav" href="a-propos.html">A propos</a></li>
-          <li><a class="texte-nav" href="contact.html">Contact</a></li>
-        </ul>
+          <ul>
+            <li><a class="texte-nav" href="home.html">Accueil</a></li>
+            <li><a class="texte-nav" href="mode-demploi.html">Mode d'emploi</a></li>
+            <li><a class="texte-nav" href="trouver-un-velib.html">Trouver un velib</a></li>
+            <li><a class="texte-nav" href="calculateur.html">Calculateur</a></li>
+            <li><a class="texte-nav" href="a-propos.html">A propos</a></li>
+            <li><a class="texte-nav" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="ham_menu">
+          <span></span>
+          <span></span>
+          <span></span>
+
+        </div>
+
 
       </nav>
 
@@ -39,26 +49,30 @@
 
   <main>
     <section class="face_à_face">
-
+      <!-- <img id="home_page_mobile" src="/ressources/images/background-homepage.svg" alt=""> -->
       <div class="cadre_body">
 
         <div class="text">
 
-          <h1>Roulez vert à Marseille <br>
+          <h1 class="home-h1">Roulez vert à Marseille <br>
             avec notre Vélib' <br>
             zéro CO2</h1>
 
-          <p class="corpsdetexte"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-          <p class="corpsdetexte"> Qui impedit officia, error voluptas blanditiis</p>
-          <p class="corpsdetexte"> asperiores quo cum inventore laudantium architecto similique</p>
-          <p class="corpsdetexte"> eaque totam iure mollitia cupiditate labore autem unde!</p>
+          <p class="corpsdetexte"> Lorem ipsum dolor sit amet consectetur, adipisicing
+            <br>
+            elit. Qui impedit officia, error voluptas
+            <br>
+            asperiores quo cum inventore, Lorem, ipsum.
+            <br>
+            eaque totam iure mollitia cupiditate labore autem unde!
+          </p>
         </div>
 
         <div class="flex_boutons">
           <div class="premier_bouton">
             <input class="button_1" type="button" value="Commencer">
           </div>
-          <p>ou</p>
+          <p class="ou">ou</p>
           <div class="deuxième_bouton">
             <input class="button_2" type="button" value="En savoir plus">
           </div>
@@ -70,25 +84,24 @@
 
     </section>
 
-
     <footer>
       <div>
-        
-        <!--Creation flexbox du footer-->
-          <div class="flex-container">
-        <!--Ajout des 6 liens-->
-        
+
+        <div class="flex-container">
+
+          <!-- <p class="copyright"> Copyright © 2022 CO2WEB <br>All rights reserved </p> -->
+
           <div><a class="texte-nav" href="home.html"> Accueil</a></div>
           <div><a class="texte-nav" href="mode-demploi.html">Mode d'emploi</a></div>
           <div><a class="texte-nav" href="trouver-un-velib.html">Trouver un velib</a></div>
           <div><a class="texte-nav" href="calculateur.html">Calculateur</a></div>
           <div><a class="texte-nav" href="a-propos.html">A propos</a></div>
           <div><a class="texte-nav" href="contact.html">Contact</a></div>
-        
-          </div>
-          
+
         </div>
-  </footer>
+
+      </div>
+    </footer>
 
   </main>
 </body>

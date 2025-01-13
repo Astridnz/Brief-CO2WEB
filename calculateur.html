@@ -42,63 +42,65 @@
       <h1>Calculateur d'émissions de CO2
         <br>Trajets domicile / travail en voiture
       </h1>
-    
+
       <div class="rond-vert">
         <img src="/ressources/images/rond-creux-vert-darker.svg" alt="">
       </div>
 
-        <form class="calculateur-flex" action="#">
+      <form class="calculateur-flex" action="#">
 
-          <div class="calculateur__info">
-            <label class="corpsdetexte" for="kilometres">Votre distance parcourue par jour (en kilomètres) :</label>
-            <input class="corpsdetexte" type="number"  name="Kilomètres parcourus" id="kilometres" placeholder="Distance journalière parcourue">
+        <div class="calculateur__info">
+          <label class="corpsdetexte" for="kilometres">Votre distance parcourue par jour (en kilomètres) :</label>
+          <input class="corpsdetexte" type="number" name="Kilomètres parcourus" id="kilometres"
+            placeholder="Distance journalière parcourue">
         </div>
 
 
-          <div class="calculateur__info">
-              <label class="corpsdetexte" for="jour-travail">Nombre de jours travaillés par semaine :</label>
-              <input class="corpsdetexte" type="number"  name="Jours travaillés" id="jour-travail" placeholder="Nombre de jours">
-          </div>
-
-          <div class="calculateur__info">
-              <input class="button_1" type="button" value="Commencer">
-              <p class="texte-quote">
-                <span id="trigger">En utilisant cette calculatrice d'émission de carbone,
-                vous acceptez que les informations collectées soient inscrites 
-                et stockées dans notre base de données publique.
-              </span>
-              </p>
-          </div>
-        </form>
-
-        <div id="popup" class="popup">
-            <p class="corpsdetexte">Les émissions de CO2 pour les trajets domicile / travail
-              en voiture sont de 12.00 kg par mois.
-            </p>
+        <div class="calculateur__info">
+          <label class="corpsdetexte" for="jour-travail">Nombre de jours travaillés par semaine :</label>
+          <input class="corpsdetexte" type="number" name="Jours travaillés" id="jour-travail"
+            placeholder="Nombre de jours">
         </div>
+
+        <div class="calculateur__info">
+          <input class="button_1" type="button" value="Commencer">
+          <p class="texte-quote">
+            <span id="trigger">En utilisant cette calculatrice d'émission de carbone,
+              vous acceptez que les informations collectées soient inscrites
+              et stockées dans notre base de données publique.
+            </span>
+          </p>
+        </div>
+      </form>
+
+      <div id="popup" class="popup">
+        <p class="corpsdetexte">Les émissions de CO2 pour les trajets domicile / travail
+          en voiture sont de 12.00 kg par mois.
+        </p>
+      </div>
 
     </section>
   </main>
 
   <footer>
     <div>
-      
 
-        <div class="flex-container">
 
-      
+      <div class="flex-container">
+
+
         <div><a class="texte-nav" href="home.html"> Accueil</a></div>
         <div><a class="texte-nav" href="mode-demploi.html">Mode d'emploi</a></div>
         <div><a class="texte-nav" href="trouver-un-velib.html">Trouver un velib</a></div>
         <div><a class="texte-nav" href="calculateur.html">Calculateur</a></div>
         <div><a class="texte-nav" href="a-propos.html">A propos</a></div>
         <div><a class="texte-nav" href="contact.html">Contact</a></div>
-      
-        </div>
-        
+
       </div>
-</footer>
-<script src="script.js"></script>
+
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>

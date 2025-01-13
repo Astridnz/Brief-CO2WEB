@@ -27,10 +27,10 @@ background-attachment: fixed;
     top: 9em;
     left: 92em;
     object-fit: contain;
-    z-index: 100;
+    //z-index: 100;
   }
 
-  &-flex {
+  &__flex {
     width: 60%;
     margin: auto;
     padding: 0 3rem;
