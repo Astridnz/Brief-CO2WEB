@@ -1,68 +1,175 @@
-.main__mode-demploi{
-width: 80%;
-    // pour positionner les images sur backcground : url + unités
-  background: url(/ressources/images/bubbles-bottom-left.svg) bottom 0em left 32em ,
-              url(/ressources/images/bubbles-top-right.svg) top 7em right 28em;
-  background-repeat: no-repeat;
-  background-size: 10% ;
+@media screen and (min-width: 1920px )
+{
+    /* Desktop queries */
 
-  h1{
-    // ajoute un espace entre le titre et le header
-    margin-top: 3em;
-  }
+  .main__mode-demploi{
+  width: 80%;
+      // pour positionner les images sur backcground : url + unités
+    background: url(/ressources/images/bubbles-bottom-left.svg) bottom 0em left 32em ,
+                url(/ressources/images/bubbles-top-right.svg) top 7em right 28em;
+    background-repeat: no-repeat;
+    background-size: 10% ;
 
-  .mode-demploi{
-  @include centrage-avec-hauteur;
-
-    
-    &__flex{
-      // les espaces entre les 3 divs option sont égaux
-      display: flex;
-      justify-content: space-around;
+    h1{
+      // ajoute un espace entre le titre et le header
+      margin-top: 3em;
     }
 
-    &__option{
-      padding: 2em 3em 2em 3em;
-      gap: 2em;
-      // ajuste la largeur et la hauteur s'ajuste automatiquement
-      width: 20%;
-      height: auto;
-      // aligne le logo titre et texte verticalement
+    .mode-demploi{
+    @include centrage-avec-hauteur;
+
+      
+      .slide-container{
+        // les espaces entre les 3 divs option sont égaux
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .custom-slider{
+        padding: 2em 3em 2em 3em;
+        gap: 2em;
+        // ajuste la largeur et la hauteur s'ajuste automatiquement
+        width: 20%;
+        height: auto;
+        // aligne le logo titre et texte verticalement
+        display: flex;
+        flex-direction: column;
+        
+
+        &:nth-child(2) {
+          background: url(/ressources/images/quart-de-rond-calculateur-magique.svg) top right;
+          background-repeat: no-repeat;
+          // ombre sur le calculateur magique
+          box-shadow: 0px 0px 6px 6px rgba(202, 201, 201, 0.2); /* Ombre */
+          border-radius: 2em;
+          background-color: $background-color;
+        }
+
+
+        .slide-img{
+        // ajuste la taille des images
+          height: 10em;
+          padding: 5em 5em 0chem 5em ;
+        }
+
+
+
+        h2 {
+          // centre le titre
+          text-align: center;
+          margin-top: 1em;
+          padding-top: 0;
+        }
+
+        .corpsdetexte{
+        // centre le corps de texte
+          text-align: center;
+        // aère le corps de texte
+          width: 90%;
+          margin: auto;
+          padding-bottom: 2em;
+        }
+
+        
+      }
+    }
+  }
+  .prev,
+  .next {
+      display: none;
+      visibility: hidden;
+    }
+}
+//--------------------------FIN DESKTOP------------------------------------------------------------------------------
+
+@media (max-device-width : 767px)
+{
+    /* Mobile queries */
+
+  .main__mode-demploi{
+
+
+    h1{
+      // ajoute un espace entre le titre et le header
+      margin-top: 1em;
+    }
+
+    .slide-container {
+      border: red solid;
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      position: relative;
+      height: 50vh;
+  
+  }
+  
+  .custom-slider{
+      border: palevioletred solid;
+      display: none;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+  }
+  .prev, .next {
+      border: orange  solid;
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1rem;
+      height: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: 30px;
+      background-color: rgba(0,0,0,0);
+      transition: background-color 0.6s ease;
+  }
+  .prev{ left: 1rem; }
+  .next { right: 1rem; }
+  .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.5);
+  }
+  .slide-text {
+      border: yellow  solid;
+      text-align: center;
+      font-size: .5rem;
+  
+  }
+  .slide-img{
+      border: blue solid;
+      width: 10rem;
+      max-height: auto;
+      display: block;
+      margin: 0 auto;
       
-
-      &:nth-child(2) {
-        background: url(/ressources/images/quart-de-rond-calculateur-magique.svg) top right;
-        background-repeat: no-repeat;
-        // ombre sur le calculateur magique
-        box-shadow: 0px 0px 6px 6px rgba(202, 201, 201, 0.2); /* Ombre */
-        border-radius: 2em;
-        background-color: $background-color;
       }
-
-
-      img{
-      // ajuste la taille des images
-        height: 10em;
-        padding: 5em 5em 0chem 5em ;
-      }
-
-      h2 {
-        // centre le titre
-        text-align: center;
-        margin-top: 1em;
-        padding-top: 0;
-      }
-
-      .corpsdetexte{
-      // centre le corps de texte
-        text-align: center;
-      // aère le corps de texte
-        width: 90%;
-        margin: auto;
-        padding-bottom: 2em;
-      }
-    }
+  
+  .slide-dot{ text-align: center; }
+  .dot {
+      border: violet  solid;
+      cursor: pointer;
+      height: 10px;
+      width: 10px;
+      margin: 0 2px;
+      background-color: #999999;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover { background-color: #111111; }
+  .fade {
+      animation-name: fade;
+      animation-duration: 1s;
+  }
+  @keyframes fade {
+      from {opacity: 0}
+      to {opacity: 1}
+  }
   }
 }
+

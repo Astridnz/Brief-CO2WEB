@@ -33,42 +33,59 @@
     </div>
 
   </header>
-
+1
   <main class="main__mode-demploi">
+
     <h1>Comment ça <br>marche ?</h1>
+
     <section class="mode-demploi">
 
-    
-
-      <div class="mode-demploi__flex">
-
-        <div class="mode-demploi__option">
-          <img src="ressources/images/analysezvotresite.svg" alt="Analyser votre site">
-          <h2>Analysez votre site</h2>
-          <p class="corpsdetexte"> Lorem ipsum dolor sit amet, 
-            consectetur adipiscing elit. Nullam imperdiet, 
-            ipsum ac finibus mattis, 
-            felis justo tempor urna, interdum semper. </p>
+      <div class="slide-container">
+        <div class="custom-slider fade">
+            <img class="slide-img" src="ressources/images/analysezvotresite.svg" alt="Analyser votre site">
+            <div class="slide-text">
+                <h2>Analysez votre site</h2>
+                <p class="corpsdetexte"> Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit. Nullam imperdiet, 
+                    ipsum ac finibus mattis, 
+                    felis justo tempor urna, interdum semper. 
+                </p>
+            </div>
         </div>
 
-        <div class="mode-demploi__option">
-          <img src="ressources/images/utiliserlecalculateurmagique.svg" alt="Calculateur Magique">
-          <h2>Utilisez le calculateur magique</h2>
-          <p class="corpsdetexte"> Lorem ipsum dolor sit amet, 
-            consectetur adipiscing elit. Nullam imperdiet, 
-            ipsum ac finibus mattis, 
-            felis justo tempor urna, interdum semper. </p>
+        <div class="custom-slider fade">
+            <img class="slide-img" src="ressources/images/utiliserlecalculateurmagique.svg" alt="Calculateur Magique">
+            <div class="slide-text">
+                <h2>Utilisez le calculateur magique</h2>
+                <p class="corpsdetexte"> Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit. Nullam imperdiet, 
+                    ipsum ac finibus mattis, 
+                    felis justo tempor urna, interdum semper. 
+                </p>
+            </div>
         </div>
 
-        <div class="mode-demploi__option">
-          <img src="ressources/images/obtenezlesresultats.svg" alt="Obtenez vos résultats">
-          <h2>Obtenez les résultats</h2>
-          <p class="corpsdetexte"> Lorem ipsum dolor sit amet, 
-            consectetur adipiscing elit. Nullam imperdiet, 
-            ipsum ac finibus mattis, 
-            felis justo tempor urna, interdum semper. </p>
+        <div class="custom-slider fade">
+            <img class="slide-img" src="ressources/images/obtenezlesresultats.svg" alt="Obtenez vos résultats">
+            <div class="slide-text">
+                <h2>Obtenez les résultats</h2>
+                <p class="corpsdetexte"> Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit. Nullam imperdiet, 
+                    ipsum ac finibus mattis, 
+                    felis justo tempor urna, interdum semper. 
+                </p>
+            </div>
         </div>
-      </div>
+        
+        <a class="prev" onclick="plusSlides(-1)"><img src="ressources/images/arrow-left.png" alt=""></a>
+        <a class="next" onclick="plusSlides(1)"><img src="ressources/images/arrow-right.png" alt=""></a>
+    </div>
+    <br>
+    <div class="slide-dot">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
     </section>
   </main>
 
@@ -91,4 +108,5 @@
       </div>
 </footer>
 </body>
+<script src="Slider_a_propos.js"></script>
 </html>
