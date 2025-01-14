@@ -10,8 +10,6 @@
 
 @media screen and (max-width: 360px) {
   background-image: none;
-
-
 }
 
 @media screen and (max-width:768px ) {
@@ -19,7 +17,6 @@
 }
 
 }
-
 
 .cadre_body{
   padding: 5em;
@@ -79,10 +76,7 @@ display: block;
 }
 
 h1{
-
-  font-family: $font-family-title;
   margin-top: 2em;
-  font-size: $font-size-title-1;
   
 @media screen and (max-width : 360px) {
   font-size: 30px;
