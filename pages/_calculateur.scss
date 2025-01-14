@@ -1,5 +1,6 @@
 
 .main__calculateur{
+  background-attachment: fixed;
   // pour positionner les images sur backcground : url + unités
   background:       url(/ressources/images/background-feuille1-calculateur.svg) top 9em left 0em,
                     url(/ressources/images/background-feuille2-calculateur.svg)bottom 12rem left -5rem,
@@ -13,7 +14,7 @@
                     15% 15%,
                     10% 10%,
                     35% 35%;
-  background-attachment: fixed;
+
                     
 }
 
