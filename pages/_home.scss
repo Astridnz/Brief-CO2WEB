@@ -8,8 +8,18 @@
     background-position-x: right;
     background-size: 50em;
 
+@media screen and (max-width: 360px) {
+  background-image: none;
+
 
 }
+
+@media screen and (max-width:768px ) {
+  background-size: 40em;
+}
+
+}
+
 
 .cadre_body{
   padding: 5em;
@@ -17,17 +27,6 @@
   @media screen and (max-width : 360px) {
     padding: 1em;
   }
-
-@media screen and (max-width: 360px) {
-  background-size: contain;
-  // width: 100px;
-  // height: 100px;
-  border-radius: 30px;
-}
-
-@media screen and (max-width:768px ) {
-  background-size: 40em;
-}
 
 .face_à_face{
 
@@ -69,11 +68,12 @@ margin-left: 0;
 .text{
 
 margin-bottom: 3%;
-text-align: justify;
-margin-right: 20%;
+text-align: start;
+margin-right: 75%;
+display: block;
 
 @media screen and (max-width : 360px) {
-  text-align: left;
+  width: 100%;
 }
 
 }
@@ -107,11 +107,13 @@ font-family: $font-family-text;
 font-size: $font-size-text;
 font-weight: 500;
 
-
 @media screen and (max-width : 360px) {
   margin-left: 0%;
   margin-right: 0;
 }
+
 }
+
 }
+
 }
