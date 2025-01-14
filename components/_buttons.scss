@@ -9,9 +9,10 @@
   border-right: none;
   font-family: $font-family-text;
   font-size: $font-size-text;
-  font-weight: 500;
+  font-weight: 500; 
   border-radius: 40px;
-  box-shadow: $lighter-green-color;
+  // box-shadow: $lighter-green-color;
+  filter: drop-shadow(0px 3px 3px $medium-green-color);
   width: 150px;
   padding: 10px;
   text-align: center;

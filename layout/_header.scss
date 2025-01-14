@@ -1,15 +1,12 @@
 /* --------------------------------- Header --------------------------------- */
 header{
   // caratéristiques principales du header
-
   // le header reste fixe en haut de la page
   position: fixed;
   top: 0;
   // le header s'étend sur toute la largeur de la page
   left: 0;
   right: 0;
-
-
   display: flex;
   align-items: center;
   padding: 1em 5em;
@@ -19,11 +16,6 @@ header{
   // ombre de la ligne
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
-  @media screen and (max-width: 360px) {
-    transition: right 0,5s ease;
-  }
-
-
 
   .header-flex{
     display: flex;
@@ -32,12 +24,26 @@ header{
     width: 100%;
 
     // caractéristiques du logo
+
+
+
     img{
+    
       width: 10em;
       height: auto;
       margin-right: 1em;
-    }
+
+      @media screen and (max-width: 360px){
+          margin-left: 0;
+          width: 100%;
+      }
+    } 
   }
+
+
+ // Icons : menu et croix = invisible version desktop // 
+.icon-menu{display: none;}
+.close{ display: none;}
 
   // caractériqtiues principales de la nav qui comprend la liste et les liens
   nav{
@@ -71,13 +77,11 @@ header{
         &:active{
           font-weight: bold;
         }
-
-        @media screen and (max-width: 360px) {
-          transition: right 0,3s;
-
-          .header-flex.active{ right : 0 }
-        }
-
       }
     }
   }
+
+ @media screen and (max-width: 360px) {
+  .logo{ width: 20%;   }
+
+ }
