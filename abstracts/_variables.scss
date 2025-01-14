@@ -24,29 +24,7 @@ $font-family-text: "Roboto", serif;
 // ------------------------------------------FONT SIZE--------------------------------------
 
 // DESKTOP
-@media (max-width : 1920px){
+
 $font-size-title-1: 42px;
 $font-size-title-2: 20px;
 $font-size-text: 18px;
-}
-
-//NOTEBOOK
-@media only screen and (min-device-width : 769px) and (max-device-width : 1366px){
-  $font-size-title-1: 40px;
-  $font-size-title-2: 18px;
-  $font-size-text: 16px;  
-}
-
-//TABLETTE
-@media only screen and (min-device-width : 361) and (max-device-width : 768px){
-  $font-size-title-1: 38px;
-  $font-size-title-2: 16px;
-  $font-size-text: 14px;  
-}
-
-//MOBILE //TABLETTE
-@media only screen and (max-device-width : 768px){
-  $font-size-title-1: 36px;
-  $font-size-title-2: 14px;
-  $font-size-text: 12px;  
-}
