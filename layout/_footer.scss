@@ -1,6 +1,8 @@
 /* --------------------------------- Footer --------------------------------- */
 
 
+@media (min-width: 1366px) and (max-width: 1920px) {
+
 footer{
 
 // le footer reste fixe en bas de la page
@@ -11,14 +13,13 @@ left: 10px;
 right: 10px;
 }
 
-.flex-container{
+.footer_mobile{
 /*creation du bord rouge pour les liens
     border: red solid;*/
-
-/*creation flexbox du footer*/
-    display:flex;
+    display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content:right;
+/*creation flexbox du footer*/
     margin: 10px;
 
 /*creation border top de la flexbox*/
@@ -29,10 +30,16 @@ right: 10px;
     padding-bottom: 20px;
 }
 
+.flex-liens{
+display: flex;
+flex-direction: row;
+
+}
+
 
 a{
 /*couleur des liens du footer*/
-   color: $darker-green-color;
+    color: $darker-green-color;
 
 /*marge entre les liens*/
     padding: 10px;
@@ -41,11 +48,115 @@ a{
     text-decoration: none;
 }
 
-
 a:hover {
 /* Ajout d'un soulignement au passage de la souris*/
     text-decoration: underline;
 }
+.copyright{  
+    display: none;
+}
+
+}
+
+@media (min-width: 100px) and (max-width: 360px) {
+
+    footer{  
+
+        margin-bottom: 0%;
+        margin-top: 32%;
+    }
+    
+.copyright{  
+        font-family: $font-family-title;
+        font-weight: 500;
+        margin-top: 5%;  }
+
+.flex-container{ 
+        margin-bottom: 0%;
+        border-top: 2px solid $lighter-green-color;
+    }
+
+.flex-liens{    
+
+        display: flex;
+        flex-direction: row;
+        justify-content: left; 
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+.gauche{
+    padding-right: 5%;
+    padding-top: 3%;  }
+
+.droite{   
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+    a { 
+    padding:0%;
+    margin-bottom:25% ;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 1365px)  {
 
 
+    footer{
 
+        // le footer reste fixe en bas de la page
+        position: fixed;
+        bottom: 0;
+        // le footer s'étend sur la largeur de la page moins 10 dte et gche
+        left: 10px;
+        right: 10px;
+        }
+        
+        
+        .footer_mobile{
+        /*creation du bord rouge pour les liens
+            border: red solid;*/
+            display: flex;
+            flex-direction: row;
+            justify-content:right;
+        /*creation flexbox du footer*/
+            margin: 0;
+        
+        /*creation border top de la flexbox*/
+            border-top: 2px solid $lighter-green-color;
+        
+        /*creation marges haute et basse des liens*/
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        
+        .flex-liens{
+        display: flex;
+        flex-direction: row;
+        
+        }
+        
+        
+        a{
+        /*couleur des liens du footer*/
+            color: $darker-green-color;
+        
+        /*marge entre les liens*/
+            padding: 10px;
+        
+        /*Enleve le soulignement par défaut du lien*/
+            text-decoration: none;
+        }
+        
+        a:hover {
+        /* Ajout d'un soulignement au passage de la souris*/
+            text-decoration: underline;
+        }
+        .copyright{  
+            display: none;
+        }
+        
+        }
+    
