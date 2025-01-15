@@ -10,6 +10,7 @@
 
 @media screen and (max-width: 360px) {
   background-size: contain;
+  width: 100%;
 }
 
 @media screen and (max-width:768px ) {
@@ -19,7 +20,6 @@
 @media screen and (max-width: 1366px) {
   background-size: 40em;
 }
-
 }
 
 .cadre_body{
@@ -99,15 +99,19 @@ margin-right: 2%; }
 }
 }
 
+@media screen and (max-width: 360px) {
+  .body-mobile{ 
+    margin-top: 50%;
+    margin-bottom: -30%;
+    }
+}
+
 .corpsdetexte{
-
-
 
 @media screen and (max-width : 360px) {
   margin-left: 0%;
   margin-right: 0;
 }
-
 }
 
 }

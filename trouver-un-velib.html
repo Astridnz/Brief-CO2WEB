@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
   <title>Trouver un vélib</title>
 </head>
 
@@ -38,65 +41,72 @@
   <main class="main__trouver-un-velib">
 
     <!-- container du compte à rebours -->
-      <section class="trouver-un-velib__compte-a-rebours">
+    <section class="trouver-un-velib__compte-a-rebours">
 
-        <!-- container des éléments du compte à rebours -->
-        <div class="trouver-un-velib__compte-a-rebours__flex">
-          <!-- valeur calculée avec Js -->
-          <p id="jours" class="trouver-un-velib__compte-a-rebours__flex--valeur"></p>
-          <!-- label -->
-          <p class="trouver-un-velib__compte-a-rebours__flex--label">Jours</p>
-        </div>
-    
-        <div class="trouver-un-velib__compte-a-rebours__flex">
-          <p id="heures" class="trouver-un-velib__compte-a-rebours__flex--valeur"></p>
-          <p class="trouver-un-velib__compte-a-rebours__flex--label">Heures</p>
-        </div>
-    
-        <div class="trouver-un-velib__compte-a-rebours__flex">
-          <p id="minutes" class="trouver-un-velib__compte-a-rebours__flex--valeur"></p>
-          <p class="trouver-un-velib__compte-a-rebours__flex--label">Minutes</p>
-        </div>
-    
-        <div class="trouver-un-velib__compte-a-rebours__flex">
-          <p id="secondes" class="trouver-un-velib__compte-a-rebours__flex--valeur"></p>
-          <p class="trouver-un-velib__compte-a-rebours__flex--label">Secondes</p>
-        </div>
-    
-      </section>
-    
-      <!-- texte en plus -->
-      <section class="trouver-un-velib__description">
-        <h1>Coming Soon</h1>
-        <p class="corpsdetexte">
-          La fonctionnalité de recherche de vélib est en cours de développement.
-          Elle arrivera le 1er septembre 2025
-        </p>
-        
-      </section>
-    </main>
-  
-
-<footer>
-  <div>
-    
-    <!--Creation flexbox du footer-->
-      <div class="flex-container">
-    <!--Ajout des 6 liens-->
-    
-      <div><a class="texte-nav" href="home.html"> Accueil</a></div>
-      <div><a class="texte-nav" href="mode-demploi.html">Mode d'emploi</a></div>
-      <div><a class="texte-nav" href="trouver-un-velib.html">Trouver un velib</a></div>
-      <div><a class="texte-nav" href="calculateur.html">Calculateur</a></div>
-      <div><a class="texte-nav" href="a-propos.html">A propos</a></div>
-      <div><a class="texte-nav" href="contact.html">Contact</a></div>
-    
+      <!-- container des éléments du compte à rebours -->
+      <div class="trouver-un-velib__compte-a-rebours__flex">
+        <!-- valeur calculée avec Js -->
+        <p id="jours" class="trouver-un-velib__compte-a-rebours__flex--valeur"></p>
+        <!-- label -->
+        <p class="trouver-un-velib__compte-a-rebours__flex--label">Jours</p>
       </div>
-      
-    </div>
-</footer>
 
-<script src="script.js"></script>
+      <div class="trouver-un-velib__compte-a-rebours__flex">
+        <p id="heures" class="trouver-un-velib__compte-a-rebours__flex--valeur"></p>
+        <p class="trouver-un-velib__compte-a-rebours__flex--label">Heures</p>
+      </div>
+
+      <div class="trouver-un-velib__compte-a-rebours__flex">
+        <p id="minutes" class="trouver-un-velib__compte-a-rebours__flex--valeur"></p>
+        <p class="trouver-un-velib__compte-a-rebours__flex--label">Minutes</p>
+      </div>
+
+      <div class="trouver-un-velib__compte-a-rebours__flex">
+        <p id="secondes" class="trouver-un-velib__compte-a-rebours__flex--valeur"></p>
+        <p class="trouver-un-velib__compte-a-rebours__flex--label">Secondes</p>
+      </div>
+
+    </section>
+
+    <!-- texte en plus -->
+    <section class="trouver-un-velib__description">
+      <h1>Coming Soon</h1>
+      <p class="corpsdetexte">
+        La fonctionnalité de recherche de vélib est en cours de développement.
+        Elle arrivera le 1er septembre 2025
+      </p>
+
+    </section>
+  </main>
+
+
+  <footer>
+    <div>
+
+      <div class="flex-container">
+
+        <p class="copyright"> Copyright © 2022 CO2WEB. <br>All rights reserved. </p>
+        <div class="footer_mobile">
+          <div class="flex-liens">
+            <div class="gauche"><a class="texte-nav" href="home.html"> Accueil</a></div>
+            <div class="droite"><a class="texte-nav" href="mode-demploi.html">Mode d'emploi</a></div>
+          </div>
+          <div class="flex-liens">
+            <div class="gauche"><a class="texte-nav" href="trouver-un-velib.html">Trouver un velib</a></div>
+            <div class="droite"><a class="texte-nav" href="calculateur.html">Calculateur</a></div>
+          </div>
+          <div class="flex-liens">
+            <div class="gauche"><a class="texte-nav" href="a-propos.html">A propos</a></div>
+            <div class="droite"><a class="texte-nav" href="contact.html">Contact</a></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 
 </body>
+
 </html>
