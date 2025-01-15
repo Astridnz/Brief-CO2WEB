@@ -3,7 +3,10 @@
     /* Desktop queries */
 
   .main__mode-demploi{
-  width: 80%;
+    width: 80%;
+    height: 70%;
+  
+
       // pour positionner les images sur backcground : url + unités
     background: url(/ressources/images/bubbles-bottom-left.svg) bottom 0em left 32em ,
                 url(/ressources/images/bubbles-top-right.svg) top 7em right 28em;
@@ -15,17 +18,21 @@
       margin-top: 3em;
     }
 
-    .mode-demploi{
+    .mode-demploi-mob{
+      display: none;
+    }
+
+    .mode-demploi-pc{
     @include centrage-avec-hauteur;
 
       
-      .slide-container{
+      .mode-demploi-flex{
         // les espaces entre les 3 divs option sont égaux
         display: flex;
         justify-content: space-around;
       }
 
-      .custom-slider{
+      .mode-demploi-option{
         padding: 2em 3em 2em 3em;
         gap: 2em;
         // ajuste la largeur et la hauteur s'ajuste automatiquement
@@ -88,6 +95,9 @@
 
   .main__mode-demploi{
 
+    .mode-demploi-pc{
+      display: none;
+    }
 
     h1{
       // ajoute un espace entre le titre et le header

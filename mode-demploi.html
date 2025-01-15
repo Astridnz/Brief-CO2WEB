@@ -33,12 +33,13 @@
     </div>
 
   </header>
-1
+
   <main class="main__mode-demploi">
 
     <h1>Comment ça <br>marche ?</h1>
 
-    <section class="mode-demploi">
+    <!-- Caroussel Container -- Version mobile + tablette --START-->
+    <section class="mode-demploi-mob"> 
 
       <div class="slide-container">
         <div class="custom-slider fade">
@@ -81,12 +82,58 @@
         <a class="next" onclick="plusSlides(1)"><img src="ressources/images/arrow-right.png" alt=""></a>
     </div>
     <br>
-    <div class="slide-dot">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
+        <div class="slide-dot">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
     </section>
+    <!-- Caroussel Container -- Version mobile + tablette --END-->
+
+
+    <!-- Caroussel Container -- version DESKTOP --START-->
+    <section class="mode-demploi-pc"> 
+
+      <div class="mode-demploi-flex">
+        <div class="mode-demploi-option">
+            <img class="slide-img" src="ressources/images/analysezvotresite.svg" alt="Analyser votre site">
+            <div class="slide-text">
+                <h2>Analysez votre site</h2>
+                <p class="corpsdetexte"> Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit. Nullam imperdiet, 
+                    ipsum ac finibus mattis, 
+                    felis justo tempor urna, interdum semper. 
+                </p>
+            </div>
+        </div>
+
+        <div class="mode-demploi-option">
+            <img class="slide-img" src="ressources/images/utiliserlecalculateurmagique.svg" alt="Calculateur Magique">
+            <div class="slide-text">
+                <h2>Utilisez le calculateur magique</h2>
+                <p class="corpsdetexte"> Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit. Nullam imperdiet, 
+                    ipsum ac finibus mattis, 
+                    felis justo tempor urna, interdum semper. 
+                </p>
+            </div>
+        </div>
+
+        <div class="mode-demploi-option">
+            <img class="slide-img" src="ressources/images/obtenezlesresultats.svg" alt="Obtenez vos résultats">
+            <div class="slide-text">
+                <h2>Obtenez les résultats</h2>
+                <p class="corpsdetexte"> Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit. Nullam imperdiet, 
+                    ipsum ac finibus mattis, 
+                    felis justo tempor urna, interdum semper. 
+                </p>
+            </div>
+        </div>
+        
+    </section>
+<!-- Caroussel Container -- Version DESKTOP --END-->
+
   </main>
 
   <footer>
@@ -107,6 +154,8 @@
         
       </div>
 </footer>
+
+<script src="mode-demploi.js"></script>
+
 </body>
-<script src="Slider_a_propos.js"></script>
 </html>
