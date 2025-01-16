@@ -151,7 +151,10 @@
       margin: 0 auto;
       }
   
-  .slide-dot{ text-align: center; }
+  .slide-dot{ 
+    text-align: center;
+    margin-bottom: 3em;
+  }
   .dot {
       cursor: pointer;
       height: 10px;
