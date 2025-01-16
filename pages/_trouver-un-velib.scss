@@ -5,6 +5,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+@media screen and (max-width) {
+  .main__trouver-un-velib{
+display: block;
+  }
+}
+
+
   
 // Container du compte à rebours, 
 // aligne verticalement les éléments du càrebours
@@ -12,6 +20,11 @@
     display: flex;
     flex-direction: row;
     gap: 1rem;
+
+    @media screen and (max-width: 360px) {
+      margin-top: 50%;
+      padding: 2em;
+    }
 
     // Container des éléments du compte à rebours, 
     // aligne verticalement la valeur et le label
@@ -26,10 +39,15 @@
     align-items: center;
     width: auto; 
     height: auto;
+
+    
   
       // Mise en forme de la valeur calculée via js
       .trouver-un-velib__compte-a-rebours__flex--valeur{
         margin: 1rem;
+
+
+
       }
 
       // Mise en forme du label
@@ -38,6 +56,15 @@
         font-size: 1rem;
         font-weight:400;
         margin: 0.5rem;
+
+@media screen and (max-width: 360px) {
+  .trouver-un-velib__compte-a-rebours__flex--label{
+margin-top: 3rem;
+font-size: 0.5rem;
+
+  }
+}
+
       }
     }
   }
@@ -46,6 +73,25 @@
   .trouver-un-velib__description{
     text-align: center;
     width: 27%;
+}
+
+@media screen  and (max-width: 360px) {
+
+h1{  
+  font-family: $font-family-title;
+  font-weight: 500;
+}
+
+
+  .corpsdetexte{ 
+    display: flex;
+    flex-direction: row;
+    width: 50px;
+    text-align:left;
+    margin-left: 0%;
+
   }
+}
+
 
 }
