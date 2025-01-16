@@ -87,10 +87,18 @@
 
 
   header {
-    position: fixed;
-    z-index: 1001;
+    border: red solid;
+    width: 100%; /* Largeur totale */
+    max-width: 100vw; /* Largeur maximale de la viewport */
+    padding: 0.5rem; /* Padding réduit */
+    box-sizing: border-box; /* Inclut le padding dans la largeur */
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: $background-color;
-    width: 100%;
+    margin: 0px;
+    
 
     .burger-menu {
         position: fixed;
@@ -158,7 +166,7 @@
     }
 
     .burger-toggle {
-        position: fixed;
+        position: absolute;
         /* Bouton fixe en haut à droite */
         top: 1rem;
         right: 1rem;
@@ -302,7 +310,7 @@
 
     .link-img-home img {
         width: 30%;
-        padding: 1rem 0 0 1rem;
+        padding: 5rem 0 0 1rem;
         text-decoration: none;
         /* Taille plus petite pour mobile */
     }
