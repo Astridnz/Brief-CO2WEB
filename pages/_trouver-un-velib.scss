@@ -1,17 +1,17 @@
 // <!-- VERSION ASTRID -->
 // Container principal, aligne le contenu au centre
 .main__trouver-un-velib{
-  border: red solid;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-// @media screen and (max-width) {
-//   .main__trouver-un-velib{
-// display: block;
-//   }
-// }
+@media screen and (max-width) {
+  .main__trouver-un-velib{
+  display: flex;
+  flex-direction: row;
+  }
+}
 
 
 // Container du compte à rebours, 
@@ -22,10 +22,11 @@
     flex-direction: row;
     gap: 1rem;
 
-    // @media screen and (max-width: 360px) {
-    //   margin-top: 50%;
-    //   width: fit-content;
-    // }
+    @media screen and (max-width: 360px) {
+    .trouver-un-velib__compte-a-rebours{
+      margin-top: 50%;
+      width: fit-content;}
+}
 
     // Container des éléments du compte à rebours, 
     // aligne verticalement la valeur et le label
@@ -77,22 +78,21 @@
     width: 27%;
 }
 
-// @media screen  and (max-width: 360px) {
+@media screen  and (max-width: 360px) {
 
-// h1{  
-//   font-family: $font-family-title;
-//   font-weight: 500;
-// }
+h1{  
+  font-family: $font-family-title;
+  font-weight: 500;
+}
 
 
-//   .corpsdetexte{ 
-//     display: flex;
-//     flex-direction: row;
-//     width: 50px;
-//     text-align:left;
-//     margin-left: 0%;
-
-//   }
-// }
+  .corpsdetexte{ 
+    display: flex;
+    flex-direction: row;
+    width: 50px;
+    text-align:left;
+    margin-left: 0%;
+}
+}
 
 }
