@@ -10,7 +10,7 @@
   <title>A propos</title>
 </head>
 
-<body>
+<body id="body-apropos">
   <header>
 
     <div class="header-flex">
@@ -34,70 +34,111 @@
 
   </header>
 
-  <div class="slide-container"> <!--box du slider dble page-->
+  <main id="main-apropos">
+    <div class="slider">
+<!---------------------1ere page page principale----------------------->
+<section id="block1">
+  <div class="left-image-container">
+    <div class="container-color"></div>
+    <img
+     id="img-ordi"
+     src="/ressources/images/background-apropos-ordi.png"
+     alt="image ordi"
+  />
+  </div> <!--fermeture div left image container-->
 
-    <!--slide gauche-->
-    <div class="custom-slider fade">
-     
-        <img class="image-ordi" src="/ressources/images/background-apropos-ordi.png" alt="">
-        <div class="float-right" >
-          <div class="slide-text">
-            
-            <h1>A propos du projet</h1><br>
-            <p class="corpsdetexte">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br>
-          Doloribus cum tenetur beatae illo voluptatum nihil architecto asperiores magni <br>
-          nostrum totam, corrupti non quas iusto dolores. Deleniti vero modi veniam culpa! <br>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi vero cumque </p><br>
-         
-        
-          <p class="corpsdetexte">
-          Aspernatur consequatur, deleniti aliquam unde sint? Explicabo neque facere beatae<br>
-           similique ipsa ea necessitatibus nostrum, consequuntur consequatur non? Odit!
-         </p>
-
-         </div>
-      </div>
+  <div class="right-texte-container">
+    <div class="point_and_title">
+      <div class="point"></div>
+      <h1>&Agrave propos du projet</h1>
     </div>
-    </div>
-    
+    <p>
+      Arcu, ultrices amet, ac rhoncus aget egestas diam a malesuada<br>
+      tristique<br>
+      blandit elementum dapisbus proin pretium rhoncus, viverra sagittis<br>
+      libero<br>
+      Libero varius accumsan ridiculus amet nam duis sit vestibulum nibh<br>
+      eget<br>
+      ultrices magna facilisis potenti.
+    </p>
+<!--mobile-->
+    <p id="content-block1">
+      Lorem ipsum dolor sit amet, consectetur adipisicing 
+      elit. Fugiat aspernatur reprehenderit vitae earum repellendus
+      dolores numquam nobis dicta omnis? Tempora totam sapiente 
+      rerum debitis ut tenetur qui blanditiis? Aperiam, neque!
+    </p>
+<!--fin mobile-->
 
+    <div id="greencolor"></div>
 
+    <h3>
+      Aenean egesta fermentum, at elementum ut ut eu feugiat sit feugiat 
+      morbi id ipsum tincidunt
+    </h3>
 
-
-    <!--slide droite-->
-    <div class="custom-slider fade"> 
-      <div class="slide-text"> <!--image-->
-        <div class="background-image-apropos"> <!--image-->
-
-<main>
- 
-    
-
-<!--Coté gauche, texte-->
-    <div class="moitie-texte">
-      <h1>A propos du projet</h1><br>
-      <p class="corpsdetexte">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores <br>
-        quaerat ipsum voluptas enim aperiam, alias commodi a soluta, laborum <br>
-        velit delectus omnis, perferendis officia neque quibusdam vitae quae <br>
-        numquam suscipit. Lorem ipsum dolor sit amet consectetur adipisicing <br>
-        elit. Architecto reprehenderit distinctio pariatur cum. Laudantium nam <br>
-        debitis sint. Adipisci animi voluptates vitae. Officia qui quis<br>
-        aspernatur maxime expedita odio ipsa vitae.
-      </p>
-    </div>
-
-  
-
-</main>
-        </div>
-      </div>
-    </div>
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
+<!--mobile-->
+    <h3 id="content-h3-block1">Lorem ipsum dolor sit amet</h3>
   </div>
-<!--Debut du footer-->
+<!--fin mobile-->
+
+    <div id="imgarrow">
+      <img
+      src="/ressources/images/arrow-right.png"
+      alt="image fleche droite"
+      id="right_arrow"
+      />
+    </div>
+</section>
+
+<!------------------séparation entre les deux blocks de page------------>
+
+      <section id="block2">
+        <div class="left-text-container">
+          <div class="sous-container-left-2">
+            <div id="leftarrow">
+              <img
+              src="/ressources/images/arrow-left.png"
+              alt="image fleche gauche"
+              id="left_arrow"
+              />
+            </div>
+            <div class="title-and-para">
+              <div class="point-and-title2">
+                <div class="point2"></div>
+                <h2>&Agrave propos du projet</h2>
+              </div>
+              <p id="block2-p2">
+                Lorem ipsum dolor sit amet consectetur, 
+                adipisicing elit. Enim, esse sunt temporibus 
+                consectetur, debitis harum porro et commodi
+                 eligendi assumenda, soluta doloremque! Fuga, 
+                 distinctio animi sunt veritatis incidunt 
+                 dolorem soluta!
+              </p>
+              <div id="greencolor2"></div>
+              <p id="block2-p">
+                Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Ab cum fuga impedit repellendus 
+                aliquid numquam aperiam nemo hic facere temporibus 
+                recusandae quo perspiciatis minus pariatur, 
+                nostrum ratione quasi corrupti necessitatibus?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="right-image-container">
+          <img
+          src="/ressources/images/tente-camping.svg"
+          alt="image-camping"
+          id="img-block2"
+          />
+        </div>
+      </section>
+    </div>
+  </main>
+
+<!---------------------------Debut du footer--------------------------->
 <footer>
     <div>
       

@@ -1,80 +1,67 @@
+#body-apropos{
+    overflow: hidden;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
 
-/*slide gauche*/
-
-/*ajustement taille et position background image*/
-.image-ordi{
-    height: 65vh;
-    position: relative;
-    background: url(/ressources/images/background-apropos-ordi.png);
-    background-size: 75%;
-    right: 1em;
-    top: 10em;
-}
-
-/*ajustement position text*/
-.float-right{
-    /*display: flex;
-    justify-content: right;*/
-    margin-left: 60em;
-    margin-right: 10em;
-    margin-top: -20em;
-}
-
-
-
-
-
-
-
-
-
-/*slide droite*/
-
-    /*Creation bord jaune texte*/
-.moitie-texte{
-    border: yellow solid 1px;
-
-    /*Taille texte*/
-  width: 50%;  
-  height: 100%;
-    
-    /*marge haute*/
-    margin-top: 20%;
-}
-
-
-    /*ajustement taille background image*/
-.background-image-apropos{
-    border: red solid;
-    height: 101vh;
-    background: url(/ressources/images/tente-camping.svg) right -20em bottom -10em;
-    background-repeat: no-repeat;
-    background-size: 75%;
-}
-.custom-slider { display: none; }
-.slide-container {
-  
-    position: relative;
-    margin: auto;
-}
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    bottom: 50%;
-    transform: translateY(-50%);
-    width: 60px;
-    height: 60px;
+#main-apropos{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    color: green;
-    font-size: 30px;
-    background-color: rgba(0,0,0,0);
-    transition: background-color 0.6s ease;
 }
-.prev{ left: 15px; }
-.next { right: 15px; }
-.prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.5);
+
+.slider{
+    display: flex;
+    width: 200vw;
+    transition: 0.4s ease-in;
+
+    #block1{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        
+        .left-image-container{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            transform: translateY(-100px);
+
+       /* .container-color{
+            left: 0;
+            width: 800px;
+            height: 300px;
+            */
+        }
+        }
+        .right-texte-container{
+            width: 700px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: start;
+            transform: translateY(-40%);
+
+        .point_and_title{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 20px;
+            padding-bottom: 50px;
+
+        .point{
+            width: 20px;
+            height: 20px;
+            border-radius: 20px;
+            background-color: $medium-green-color;
+        }
+       /* h1{
+            font-size: 3em;
+            font-family: $title-font;
+            font-weight: 600;
+            color: black;
+        }*/
+        }
+
+        }
+    }
+}
 }
