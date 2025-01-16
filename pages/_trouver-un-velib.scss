@@ -5,24 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10%;
-
-@media screen and (max-width: 360px) {
-  .main__trouver-un-velib{
-    align-items: center;
-    margin-top: 10%;
-  
-  }
-}
-
-  @media screen and (max-width: 360px) {
-    .trouver-un-velib__compte-a-rebours{
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-}
-
-}
+  height: 84vh;
 
 // Container du compte à rebours, 
 // aligne verticalement les éléments du càrebours
@@ -31,7 +14,6 @@
     flex-direction: row;
     gap: 1rem;
     }
-}
 
     // Container des éléments du compte à rebours, 
     // aligne verticalement la valeur et le label
@@ -58,33 +40,9 @@
         font-size: 1rem;
         font-weight:400;
         margin: 0.5rem;
-        @media screen  and (max-width: 360px) {
-
-          h1{  
-            font-family: $font-family-title;
-            font-weight: 500;
-            text-align: center;
-          }
-          
-            .corpsdetexte{ 
-              display: flex;
-              flex-direction: row;
-              width: 20rem;
-              text-align: center;
-              margin-left: 0%;
-          }
-          }
-
-
-@media screen and (max-width: 360px) {
-  .trouver-un-velib__compte-a-rebours__flex--label{
-margin-top: 3rem;
-
-  }
-}
-
       }
     }
+  }
 
   // Container texte en plus
   .trouver-un-velib__description{
@@ -92,6 +50,65 @@ margin-top: 3rem;
     width: 27%;
 }
 
+@media (max-device-width : 1366px){
+  // Container principal, aligne le contenu au centre
+.main__trouver-un-velib{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
+// Container du compte à rebours, 
+// aligne verticalement les éléments du càrebours
+  .trouver-un-velib__compte-a-rebours{
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    }
 
+    // Container des éléments du compte à rebours, 
+    // aligne verticalement la valeur et le label
+    .trouver-un-velib__compte-a-rebours__flex {
+    background-color: $darker-green-color;
+    font-family: $font-family-title;
+    color: $background-color;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto; 
+    height: auto;
 
+    
+  
+      // Mise en forme de la valeur calculée via js
+      .trouver-un-velib__compte-a-rebours__flex--valeur{
+        margin: 1rem;
+      }
+
+      // Mise en forme du label
+      .trouver-un-velib__compte-a-rebours__flex--label{
+        margin-top: 0rem;
+        font-size: 0.7rem;
+        font-weight:400;
+      }
+    }
+  }
+
+  // Container texte en plus
+  .trouver-un-velib__description{
+    text-align: center;
+    width: 80%;
+    line-height: 2rem;
+    padding-bottom: 0px;
+
+    h1{
+      font-size: 35px;
+    }
+
+    p{
+      font-size: 16px;
+    };
+}
+}
