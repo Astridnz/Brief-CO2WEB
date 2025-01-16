@@ -1,6 +1,7 @@
 // <!-- VERSION ASTRID -->
 // Container principal, aligne le contenu au centre
 .main__trouver-un-velib{
+  border: red solid;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,6 +18,7 @@ display: block;
 // Container du compte à rebours, 
 // aligne verticalement les éléments du càrebours
   .trouver-un-velib__compte-a-rebours{
+    border: orange  solid;
     display: flex;
     flex-direction: row;
     gap: 1rem;
