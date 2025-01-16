@@ -4,19 +4,16 @@
     /* Desktop queries */
 
   .main__mode-demploi{
-    width: 80%;
-    height: 70%;
-  
-
       // pour positionner les images sur backcground : url + unités
-    background: url(/ressources/images/bubbles-bottom-left.svg) bottom -2em left 32em ,
-                url(/ressources/images/bubbles-top-right.svg) top 7em right 28em;
+    background: url(/ressources/images/bubbles-bottom-left.svg) bottom 0em left 44em ,
+                url(/ressources/images/bubbles-top-right.svg) top 7em right 40em;
     background-repeat: no-repeat;
     background-size: 10% ;
+    padding-bottom: 80px;
 
     h1{
       // ajoute un espace entre le titre et le header
-      margin-top: 1em;
+      margin: 1em;
     }
 
     .mode-demploi-mob{
@@ -25,6 +22,7 @@
 
     .mode-demploi-pc{
     @include centrage-avec-hauteur;
+
 
       
       .mode-demploi-flex{
@@ -37,7 +35,7 @@
         padding: 2em 3em 2em 3em;
         gap: 2em;
         // ajuste la largeur et la hauteur s'ajuste automatiquement
-        width: 20%;
+        width: 15%;
         height: auto;
         // aligne le logo titre et texte verticalement
         display: flex;
@@ -96,7 +94,7 @@
 
     h1{
       // ajoute un espace entre le titre et le header
-      margin-top: 1em;
+      margin: .5em;
     }
 
     .slide-container {
