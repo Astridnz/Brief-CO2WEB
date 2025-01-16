@@ -7,7 +7,9 @@
 #main-apropos{
     display: flex;
 }
+
 /*               1ere page page principale                       */
+
 .slider{
     display: flex;
     width: 200vw;
@@ -36,16 +38,17 @@
             width: 700px;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: start;
-            transform: translateY(-40%);
+            transform: translateY(-25%);
+            margin-left: 10%;
 
         .point_and_title{
             display: flex;
             justify-content: start;
             align-items: center;
             gap: 20px;
-            padding-bottom: 50px;
+            padding-bottom: -20px;
 
         .point{
             width: 20px;
@@ -61,9 +64,9 @@
         }*/
         }
         .corpsdetexte{
-            font-weight: 400;
+            font-weight: 300;
             line-height: 40px;
-            padding-bottom: 25px;
+            padding-bottom: 5px;
         }
 
  /*mobile*/
@@ -79,7 +82,7 @@
         }
 /*fin mobile*/
 
-       /* #greencolor {
+        #greencolor {
             background: rgb(181, 214, 83);
             background: linear-gradient(150deg,
                 rgba(181, 214, 83, 1) 0%,
@@ -88,8 +91,8 @@
             width: 300px;
             height: 3px;
             border-radius: 10px;
-            margin-bottom: 25px;
-          } */
+            margin-bottom: 5px;
+          } 
 
         h3 {
             font-family: $font-family-title;
@@ -119,5 +122,271 @@
         }
         }
 
-    }
+/*   .....séparation entre les 2 blocks de page : block2.......      */
+
+        #block2{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        
+        .left-text-container{
+            width: 800px;
+            transform: translate(250px, -200px);
+
+        .sous-container-left-2{
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            align-items: center;
+            gap: 20px;
+
+          #leftarrow{
+            width: 40px;
+            transform: translateX(-150px);
+
+            #leftarrow:hover{
+                cursor: pointer;
+            }
+
+            img{
+                width: 70px;
+            }
+          }
+          #leftarrow:hover{
+            cursor: pointer;
+          }
+
+          .title-and-para{
+            display: flex;
+            flex-direction: column;
+
+            .point-and-title2{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 20px;
+
+                h2{
+                    font-size: 3em;
+                    padding-bottom: 40px;
+                    font-family: $font-family-title;
+                    font-weight: 600;
+                    color: black;
+                }
+                .point2{
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 20px;
+                    background-color: $medium-green-color;
+                    margin-bottom: 40px;
+                }
+            }
+            #block2-p2{
+                display: none;
+            }
+            /*#greencolor2{
+                display: none;
+            }*/
+
+            #block2-p{
+                font-size: 1.5em;
+                line-height: 50px;
+                font-family: $font-family-text;
+                color: black;
+                font-weight: 400;
+            }
+          }
+        }
+        }
+        }
+
+        .right-image-container{
+            display: flex;
+            justify-content: end;
+            transform: translateX(200px);
+
+            #img-block2{
+                width: 100%;
+            }
+        }
+        }
+
+        /*     ....         mobile          ....        */
+
+        @media screen and (max-width: 360px) and (min-width: 200px) {
+            #body-apropos {
+              width: 100%;
+              overflow: hidden;
+          
+              #main-apropos {
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+                overflow: hidden;
+                justify-content: space-between;
+              }
+          
+              .slider {
+                width: 200vw;
+          
+                #block1 {
+                  width: 100vw;
+                  display: flex;
+                  flex-direction: column;
+          
+                  .left-image-container {
+                    width: 80%;
+                    transform: translate(-50px, -20px);
+          
+                    .container-color {
+                      width: 90%;
+                      height: 150px;
+                    }
+          
+                    /*#img-feuille {
+                      width: 90%;
+                      transform: translate(5px, -20px);
+                    }
+          
+                    #img-pc {
+                      width: 70%;
+                      transform: translate(0, 30px);
+                    }*/
+                  }
+          
+                  .right-texte-container {
+                    width: 100vw;
+                    transform: translate(0px);
+                    padding-left: 20px;
+                    margin: 0;
+          
+                    .point_and_title {
+                      padding: 0;
+                      margin: 0;
+                      transform: translate(20px, -270px);
+          
+                      .point {
+                        display: none;
+                      }
+          
+                      h1 {
+                        font-size: 180%;
+                        margin-bottom: 0;
+                        padding-top: 0;
+                        width: 100%;
+                      }
+                    }
+          
+                    p {
+                      display: none;
+                    }
+          
+                    #content-block1 {
+                      font-family: $font-family-text;
+                      display: block;
+                      font-size: 90%;
+                      font-weight: 400;
+                      line-height: 120%;
+                      width: 90%;
+                      text-align: start;
+                      padding-bottom: 10px;
+                    }
+          
+                    /*#greencolor {
+                      width: 100px;
+                      height: 2.3px;
+                      margin-bottom: 10px;
+                    }*/
+          
+                    h3 {
+                      display: none;
+                    }
+          
+                    #content-h3-block1 {
+                      font-family: $font-family-title;
+                      font-weight: 400;
+                      font-size: 50%;
+                      margin-bottom: 10px;
+          
+                      display: block;
+                      font-size: 100%;
+                    }
+                  }
+          
+                  #imgarrow {
+                    width: 10%;
+                    height: 10%;
+                    transform: translate(170px, -416px);
+                    cursor: pointer;
+          
+                    img {
+                      width: 90%;
+                    }
+                  }
+                }
+          
+                #block2 {
+                  width: 100vw;
+                  display: flex;
+                  justify-content: start;
+                  flex-direction: column-reverse;
+                  padding-top: 19px;
+          
+                  .left-text-container {
+                    width: 90%;
+                    transform: translate(0);
+          
+                    .sous-container-left-2 {
+                      #leftarrow {
+                        width: 200px;
+                        transform: translate(10px, -100px);
+                        cursor: pointer;
+          
+                        #left-arrow {
+                          width: 130%;
+                        }
+                      }
+          
+                      .title-and-para {
+                        .point-and-title2 {
+                          h2 {
+                            font-size: 180%;
+                            transform: translate(-20px, -160px);
+                          }
+          
+                          .point2 {
+                            display: none;
+                          }
+                        }
+          
+                        #block2-p {
+                          display: none;
+                        }
+          
+                        #block2-p2 {
+                          width: 120%;
+                          display: block;
+                          font-family: $font-family-text;
+                          font-weight: 300;
+                          font-size: 90%;
+                          transform: translate(-45px, 60px);
+                        }
+                      }
+                    }
+                  }
+          
+                  .right-image-container {
+                    padding-top: 0px;
+                    transform: translate(50px, 100px);
+                    width: 60%;
+                  }
+                }
+              }
+            }
+          }
+
+
 
