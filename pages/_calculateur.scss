@@ -1,24 +1,29 @@
 
 .main__calculateur{
+
+  .calculateur-mob{
+    display: none;
+  }
+  
   background-attachment: fixed;
   // pour positionner les images sur backcground : url + unités
-  background:       url(/ressources/images/background-feuille1-calculateur.svg) top 9em left 0em,
-                    url(/ressources/images/background-feuille2-calculateur.svg)bottom 12rem left -5rem,
-                    url(/ressources/images/rond-creux-vert-medium.svg) top 8rem right 4rem,
-                    url(/ressources/images/rond-creux-vert-light.svg) top 18rem right 7rem,
-                    url(/ressources/images/background-feuille3-calculateur.svg) bottom 15rem right 1rem;
+  background:       url(/ressources/images/background-feuille1-calculateur.svg) top 0em left -7em,
+                    url(/ressources/images/background-feuille2-calculateur.svg)bottom 5rem left -7rem,
+                    url(/ressources/images/rond-creux-vert-medium.svg) top 2rem right 4rem,
+                    url(/ressources/images/rond-creux-vert-light.svg) top 12rem right 7rem,
+                    url(/ressources/images/background-feuille3-calculateur.svg) bottom 7rem right -6rem;
   background-repeat: no-repeat;
   // redimmensionnement des images
-  background-size:  40% 40%,
-                    38% 38%,
+  background-size:  50% 50%,
+                    45% 45%,
                     15% 15%,
                     10% 10%,
-                    35% 35%;
-
+                    45% 45%;
+padding-bottom: 7rem;
 
 }
 
-.calculateur {
+.calculateur-pc {
     h1{
       text-align: center;
     }
@@ -29,10 +34,6 @@
       left: 90em;
       object-fit: contain;
       z-index: 100;
-
-@media screen and (max-width: 360px) {
-    img{ visibility: hidden; }  
-}
 
     }
   
@@ -94,3 +95,82 @@
   transform: translate(-50%, -50%);
 }
 
+@media (max-device-width : 1366px){
+    /* Mobile queries */
+
+    .main__calculateur{
+      background-image: none;
+      /* haut | droit | bas | gauche */
+      padding: 0 0 5rem 0;
+
+      .calculateur-pc{
+        display: none;
+      }
+
+      .calculateur-mob {
+        display: block;
+        h1{
+          text-align: start;
+          font-size: 35px;
+          padding-left: 1.5rem;
+        }
+
+        p{
+          font-size: 10px;
+        }
+
+      
+        &-flex {
+          width: 80%;
+          margin: auto;
+          padding: 2rem 1rem;
+          gap: 2rem;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          box-shadow: 0px 0px 6px 6px rgba(202, 201, 201, 0.2); /* Ombre */
+          border-radius: 2em;
+          background-color: $background-color;
+        }
+    
+      &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 95%;
+        margin: auto 0;
+    
+    
+        label{
+          padding: 0.2rem 0;
+          font-size: 15px;
+    
+        }
+    
+        input{  
+          border-style : none none solid none;
+          border-color: $border-color;
+          padding: 1rem 0;
+          font-size: 15px;
+    
+    
+        }
+        
+      }
+    
+      .button_1{
+        align-self: center;
+        width: 90%;
+        border: none;
+        font-size:22px;
+      }
+    }
+    
+    .popup {
+      display: none;
+    }
+
+    }
+    
+    
+  }

@@ -54,7 +54,8 @@
 </header>
 
   <main class="main__calculateur">
-    <section class="calculateur">
+    <section class="calculateur-pc">
+      
       <h1>Calculateur d'émissions de CO2
         <br>Trajets domicile / travail en voiture
       </h1>
@@ -65,22 +66,22 @@
         <img src="/ressources/images/rond-creux-vert-darker.svg" alt="">
       </div>
 
-      <form class="calculateur-flex" action="#">
+      <form class="calculateur-pc-flex" action="#">
 
-        <div class="calculateur__info">
+        <div class="calculateur-pc__info">
           <label class="corpsdetexte" for="kilometres">Votre distance parcourue par jour (en kilomètres) :</label>
           <input class="corpsdetexte" type="number" name="Kilomètres parcourus" id="kilometres"
             placeholder="Distance journalière parcourue">
         </div>
 
 
-        <div class="calculateur__info">
+        <div class="calculateur-pc__info">
           <label class="corpsdetexte" for="jour-travail">Nombre de jours travaillés par semaine :</label>
           <input class="corpsdetexte" type="number" name="Jours travaillés" id="jour-travail"
             placeholder="Nombre de jours">
         </div>
 
-        <div class="calculateur__info">
+        <div class="calculateur-pc__info">
           <input class="button_1" type="button" value="Commencer">
           <p class="texte-quote">
             <span id="trigger">En utilisant cette calculatrice d'émission de carbone,
@@ -97,6 +98,37 @@
         </p>
       </div>
 
+    </section>
+
+    <section class="calculateur-mob">
+      
+      <h1>Calculez vos émissions</h1>
+
+      <!-- <h1 class="h1_mobile_calculateur">Calculez vos émissions</h1> -->
+      <form class="calculateur-mob-flex" action="#">
+
+        <div class="calculateur-mob__info">
+          <label class="corpsdetexte" for="kilometres">Distance parcourue par jour (en km) :</label>
+          <input class="corpsdetexte" type="number" name="Kilomètres parcourus" id="kilometres"
+            placeholder="Distance parcourue">
+        </div>
+
+
+        <div class="calculateur-mob__info">
+          <label class="corpsdetexte" for="jour-travail">Nombre de jours travaillés / semaine :</label>
+          <input class="corpsdetexte" type="number" name="Jours travaillés" id="jour-travail"
+            placeholder="Nombre">
+        </div>
+
+        <div class="calculateur-mob__info">
+          <input class="button_1" type="button" value="Calculez maintenant">
+          <p class="texte-quote">
+            En utilisant cette calculatrice d'émission de carbone,
+              vous acceptez que les informations collectées soient inscrites
+              et stockées dans notre base de données publique.
+          </p>
+        </div>
+      </form>
     </section>
   </main>
 
