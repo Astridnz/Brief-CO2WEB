@@ -1,4 +1,5 @@
-@media screen and (min-width: 1920px )
+
+@media screen and (min-width: 1367px )
 {
     /* Desktop queries */
 
@@ -8,14 +9,14 @@
   
 
       // pour positionner les images sur backcground : url + unités
-    background: url(/ressources/images/bubbles-bottom-left.svg) bottom 0em left 32em ,
+    background: url(/ressources/images/bubbles-bottom-left.svg) bottom -2em left 32em ,
                 url(/ressources/images/bubbles-top-right.svg) top 7em right 28em;
     background-repeat: no-repeat;
     background-size: 10% ;
 
     h1{
       // ajoute un espace entre le titre et le header
-      margin-top: 3em;
+      margin-top: 1em;
     }
 
     .mode-demploi-mob{
@@ -29,7 +30,7 @@
       .mode-demploi-flex{
         // les espaces entre les 3 divs option sont égaux
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
       }
 
       .mode-demploi-option{
@@ -56,7 +57,7 @@
         .slide-img{
         // ajuste la taille des images
           height: 10em;
-          padding: 5em 5em 0chem 5em ;
+          padding: 5em 5em 0em 5em ;
         }
 
 
@@ -76,20 +77,13 @@
           margin: auto;
           padding-bottom: 2em;
         }
-
-        
       }
     }
   }
-  .prev,
-  .next {
-      display: none;
-      visibility: hidden;
-    }
 }
 //--------------------------FIN DESKTOP------------------------------------------------------------------------------
 
-@media (max-device-width : 767px)
+@media (max-device-width : 1366px)
 {
     /* Mobile queries */
 
@@ -99,13 +93,13 @@
       display: none;
     }
 
+
     h1{
       // ajoute un espace entre le titre et le header
       margin-top: 1em;
     }
 
     .slide-container {
-      border: red solid;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -117,17 +111,14 @@
   }
   
   .custom-slider{
-      border: palevioletred solid;
-      display: none;
       width: 100%;
       flex-direction: column;
       align-items: center;
   }
   .prev, .next {
-      border: orange  solid;
       cursor: pointer;
       position: absolute;
-      top: 50%;
+      top: 30%;
       transform: translateY(-50%);
       width: 1rem;
       height: 1rem;
@@ -145,33 +136,35 @@
       background-color: rgba(0,0,0,0.5);
   }
   .slide-text {
-      border: yellow  solid;
       text-align: center;
       font-size: .5rem;
+      width: 80%;
+      margin: auto;
+
+      .corpsdetexte{
+        text-align: justify;
+      }
   
   }
   .slide-img{
-      border: blue solid;
       width: 10rem;
       max-height: auto;
       display: block;
       margin: 0 auto;
-      
       }
   
   .slide-dot{ text-align: center; }
   .dot {
-      border: violet  solid;
       cursor: pointer;
       height: 10px;
       width: 10px;
       margin: 0 2px;
-      background-color: #999999;
+      background-color: rgba(0, 128, 0, 0.288);
       border-radius: 50%;
       display: inline-block;
       transition: background-color 0.6s ease;
   }
-  .active, .dot:hover { background-color: #111111; }
+  .active, .dot:hover { background-color: $darker-green-color; }
   .fade {
       animation-name: fade;
       animation-duration: 1s;
