@@ -7,14 +7,13 @@
   justify-content: center;
   align-items: center;
 
-@media screen and (max-width) {
-  .main__trouver-un-velib{
-display: block;
-  }
-}
+// @media screen and (max-width) {
+//   .main__trouver-un-velib{
+// display: block;
+//   }
+// }
 
 
-  
 // Container du compte à rebours, 
 // aligne verticalement les éléments du càrebours
   .trouver-un-velib__compte-a-rebours{
@@ -23,10 +22,10 @@ display: block;
     flex-direction: row;
     gap: 1rem;
 
-    @media screen and (max-width: 360px) {
-      margin-top: 50%;
-      padding: 2em;
-    }
+    // @media screen and (max-width: 360px) {
+    //   margin-top: 50%;
+    //   width: fit-content;
+    // }
 
     // Container des éléments du compte à rebours, 
     // aligne verticalement la valeur et le label
@@ -47,8 +46,9 @@ display: block;
       // Mise en forme de la valeur calculée via js
       .trouver-un-velib__compte-a-rebours__flex--valeur{
         margin: 1rem;
-
-
+// @media screen and (max-width: 360px) {
+//   width: 85%;
+// }
 
       }
 
@@ -59,13 +59,13 @@ display: block;
         font-weight:400;
         margin: 0.5rem;
 
-@media screen and (max-width: 360px) {
-  .trouver-un-velib__compte-a-rebours__flex--label{
-margin-top: 3rem;
-font-size: 0.5rem;
+// @media screen and (max-width: 360px) {
+//   .trouver-un-velib__compte-a-rebours__flex--label{
+// margin-top: 3rem;
+// font-size: 0.5rem;
 
-  }
-}
+//   }
+// }
 
       }
     }
@@ -77,23 +77,22 @@ font-size: 0.5rem;
     width: 27%;
 }
 
-@media screen  and (max-width: 360px) {
+// @media screen  and (max-width: 360px) {
 
-h1{  
-  font-family: $font-family-title;
-  font-weight: 500;
-}
+// h1{  
+//   font-family: $font-family-title;
+//   font-weight: 500;
+// }
 
 
-  .corpsdetexte{ 
-    display: flex;
-    flex-direction: row;
-    width: 50px;
-    text-align:left;
-    margin-left: 0%;
+//   .corpsdetexte{ 
+//     display: flex;
+//     flex-direction: row;
+//     width: 50px;
+//     text-align:left;
+//     margin-left: 0%;
 
-  }
-}
-
+//   }
+// }
 
 }
