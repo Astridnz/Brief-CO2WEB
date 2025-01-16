@@ -7,7 +7,7 @@
 #main-apropos{
     display: flex;
 }
-
+/*               1ere page page principale                       */
 .slider{
     display: flex;
     width: 200vw;
@@ -60,8 +60,64 @@
             color: black;
         }*/
         }
+        .corpsdetexte{
+            font-weight: 400;
+            line-height: 40px;
+            padding-bottom: 25px;
+        }
+
+ /*mobile*/
+        #content-block1{
+            display: none;
+
+
+            // @media screen and (max-width: 360px) {
+            //     #content-block1{ 
+            //         text-align: end;
+            //     }
+            // }
+        }
+/*fin mobile*/
+
+       /* #greencolor {
+            background: rgb(181, 214, 83);
+            background: linear-gradient(150deg,
+                rgba(181, 214, 83, 1) 0%,
+                rgba(121, 197, 88, 1) 32%,
+                rgba(61, 173, 92, 1) 74%);
+            width: 300px;
+            height: 3px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+          } */
+
+        h3 {
+            font-family: $font-family-title;
+            font-weight: 500;
+            color: black;
+            font-size: 1.3em;
+            line-height: 40px;
+        }
+
+ /*mobile*/
+        #content-h3-block1{
+            display: none;
+        }
+/*fin mobile*/
 
         }
+        #imgarrow{
+            width: 40px;
+            margin-right: 80px;
+            transform: translateY(-110px);
+            img{
+                width: 70px;
+            }
+        }
+        #imgarrow:hover{
+            cursor: pointer;
+        }
+        }
+
     }
-}
-}
+
