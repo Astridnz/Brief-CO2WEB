@@ -227,12 +227,12 @@
 
             #body-apropos {
               width: 100%;
-              overflow: hidden;
+
           
               #main-apropos {
                 display: flex;
                 flex-direction: column;
-                height: 100vh;
+                height: 70vh;
                 overflow: hidden;
                 justify-content: space-between;
               }
@@ -308,11 +308,12 @@
                       text-align: start;
                       padding-bottom: 1px;
                     }
-          
-                    #greencolor {
-                      width: 100px;
-                      height: 5px;
-                      margin-bottom: 10px;
+                    
+                    .green-line{
+                    border-bottom: $dark-green-color solid;
+                    border-bottom-width: 2px;
+                    width: 40%;
+                    margin: 1.5rem  0rem;
                     }
           
                     h3 {
