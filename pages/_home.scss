@@ -1,6 +1,9 @@
 
 /* --------------------------------- Home specific styles --------------------------------- */
-@media screen  and (max-width: 1920px){
+
+
+  /*---------- DESKTOP + NOTEBOOK ----------*/
+  @media screen  and (min-width: 769px){
 
   .image_home{ 
       background-image: url(/ressources/images/background-homepage.svg);
@@ -57,21 +60,21 @@
   
   }
   
-  @media (max-device-width : 1366px){
-    /* Mobile queries */
+  /*---------- MOBILE + TABELETTE ----------*/
+  @media (max-device-width : 768px){
     
     .image_home{ 
-     background-image: none;
+      background-image: none;
   
-     .home-img{
-      display: block;
-      width: 80%;
-      margin-left: auto;
-     }
+    .home-img{
+        display: block;
+        width: 80%;
+        margin-left: auto;
+      }
   
   }
-  .text{
-    padding-left: 1rem;
+    .text{
+      padding-left: 1rem;
   
   
   }
@@ -102,7 +105,7 @@
   
   .ou{ 
     margin: 1.5%;
-   }
+  }
   
   }
   
