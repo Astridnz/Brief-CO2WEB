@@ -1,3 +1,7 @@
+@media screen and (min-width: 769px) {
+  
+
+/*DESKTOP X NOTEBOOK*/
 
 .version_desktop_contact .main__contact{
 width: auto;
@@ -87,9 +91,11 @@ background-attachment: fixed;
 .version_mobile_contact{
   display: none;
 }
+}
 
+/*MOBILE X TABLETTE*/
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width : 768px) {
 .version_desktop_contact{
   display: none;
 }
@@ -106,8 +112,10 @@ background-attachment: fixed;
     
     .contact {
       h1{
-        text-align: center;
-        font-size: 1.5em;
+        text-align: left;
+        padding-left: 1rem;
+        font-size: 1.8em;
+        margin-top: 1rem;
       }
     
       .rond-vert{
@@ -117,6 +125,8 @@ background-attachment: fixed;
       &__flex {
         width: calc(100% - 1.2rem);
         margin: 0.5rem;
+        margin-bottom: 3rem;
+        margin-top: 2rem;
         padding: 1rem;
         gap: 0.5rem;
         box-sizing: border-box;
@@ -161,10 +171,13 @@ background-attachment: fixed;
       
       }
       .button_1{
+        margin-top: 1rem;
         align-self: center; 
         // haut droit bas gauche
       }
     }
+
+
 
 }
 .version_mobile_contact .contact_flex_mobile,
@@ -173,3 +186,5 @@ background-attachment: fixed;
 .version_mobile_contact .contact__info__champs--fullwidht {
   width: 100%;
 }
+
+

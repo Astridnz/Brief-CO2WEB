@@ -1,3 +1,8 @@
+
+/*DESKTOP X NOTEBOOK*/
+
+@media screen and (min-width: 769px){
+
 // <!-- VERSION ASTRID -->
 // Container principal, aligne le contenu au centre
 .main__trouver-un-velib{
@@ -50,7 +55,11 @@
     width: 27%;
 }
 
-@media (max-device-width : 1366px){
+}
+
+/*MOBILE X TABLETTE*/
+
+@media (max-width : 769px){
   // Container principal, aligne le contenu au centre
 .main__trouver-un-velib{
   display: flex;

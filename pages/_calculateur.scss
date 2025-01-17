@@ -1,3 +1,6 @@
+/*DESKTOP X NOTEBOOK*/
+
+@media screen and (min-width: 769px){
 
 .main__calculateur{
 
@@ -94,8 +97,12 @@ padding-bottom: 7rem;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+}
 
-@media (max-device-width : 1366px){
+/*MOBILE X TABLETTE*/
+
+
+@media (max-width : 769px){
     /* Mobile queries */
 
     .main__calculateur{

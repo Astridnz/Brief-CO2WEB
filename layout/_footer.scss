@@ -1,5 +1,8 @@
 /* --------------------------------- Footer --------------------------------- */
-@media (min-width: 1366px) and (max-width: 1920px) {
+
+/*DESKTOP X NOTEBOOK*/
+
+@media screen and (min-width: 769px) {
 
 footer{
 
@@ -55,7 +58,9 @@ a:hover {
 }
 }
 
-@media (min-width: 100px) and (max-width: 360px) {
+/*MOBILE X TABLETTE*/
+
+@media screen and (max-width: 768px) {
 
     footer{  
         width: 100%;
@@ -95,63 +100,3 @@ a:hover {
     text-decoration: none;
 }
 }
-
-@media (min-width: 768px) and (max-width: 1365px)  {
-
-
-    footer{
-
-        // le footer reste fixe en bas de la page
-        position: fixed;
-        bottom: 0;
-        // le footer s'étend sur la largeur de la page moins 10 dte et gche
-        left: 10px;
-        right: 10px;
-        }
-        
-        
-        .footer_mobile{
-        /*creation du bord rouge pour les liens
-            border: red solid;*/
-            display: flex;
-            flex-direction: row;
-            justify-content:right;
-        /*creation flexbox du footer*/
-            margin: 0;
-        
-        /*creation border top de la flexbox*/
-            border-top: 2px solid $lighter-green-color;
-        
-        /*creation marges haute et basse des liens*/
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-        
-        .flex-liens{
-        display: flex;
-        flex-direction: row;
-        
-        }
-        
-        
-        a{
-        /*couleur des liens du footer*/
-            color: $darker-green-color;
-        
-        /*marge entre les liens*/
-            padding: 10px;
-        
-        /*Enleve le soulignement par défaut du lien*/
-            text-decoration: none;
-        }
-        
-        a:hover {
-        /* Ajout d'un soulignement au passage de la souris*/
-            text-decoration: underline;
-        }
-        .copyright{  
-            display: none;
-        }
-        
-        }
-    
