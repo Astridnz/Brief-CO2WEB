@@ -1,5 +1,5 @@
 
-.main__contact{
+.version_desktop_contact .main__contact{
 width: auto;
 // pour positionner les images sur backcground : url + unités
 background:       url(/ressources/images/background-feuille1-calculateur.svg) top 7em left 0em,
@@ -62,6 +62,7 @@ background-attachment: fixed;
   }
 
   &__info__champs {
+    
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -80,4 +81,96 @@ background-attachment: fixed;
     // haut droit bas gauche
     margin: 0 0 2em auto; 
   }
+}
+
+.version_mobile_contact{
+  display: none;
+}
+
+
+@media screen and (max-width: 360px) {
+.version_desktop_contact{
+  display: none;
+}
+
+.version_mobile_contact{
+  display: block;
+}
+
+.version_mobile_contact.main__contact_mobile{
+    background-image: none;
+    width: 100%;
+    padding-bottom: 0em;
+    }
+    
+    .contact {
+      h1{
+        text-align: center;
+        font-size: 1.5em;
+      }
+    
+      .rond-vert{
+        display: none;
+      }
+    
+      &__flex {
+        width: 60%;
+        margin: 1.7em;
+        padding: 0 3rem;
+        gap: 1em;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        box-shadow: 0px 0px 6px 6px rgba(202, 201, 201, 0.2); /* Ombre */
+        border-radius: 2em;
+        background-color: $background-color;
+      }
+    
+      &__info {
+        display: flex;
+        width: 65%;
+        gap: 1em;
+    
+        label{
+          margin-top: 1.5em;
+        }
+    
+        input{
+          border-style : none none solid none;
+          border-color: $border-color;
+          margin-top: 1em;
+    
+        }
+        
+      }
+    
+#tel {
+width: 250px
+
+}
+
+#mail {
+  width: 250px
+  
+  }
+
+      &__info__champs {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    
+    
+        &--fullwidht {
+          display: flex;
+          flex-direction: column;
+          width: 85%;
+        }
+      
+      }
+      .button_1{
+        align-self: flex-end; 
+        // haut droit bas gauche
+        margin: 0 0 2em auto; 
+      }
+    }
 }

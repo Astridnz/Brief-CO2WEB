@@ -17,92 +17,159 @@
 
   <header>
     <a href="index.html" class="link-img-home">
-        <img src="ressources/logo/CO2-logo.svg" alt="CO2WEB Logo">
+      <img src="ressources/logo/CO2-logo.svg" alt="CO2WEB Logo">
     </a>
-        <!-- Burger Menu -->
+    <!-- Burger Menu -->
     <button class="burger-toggle" aria-label="Toggle menu">
-        <img src="ressources/logo/burger-logo.svg" alt="icone burger" class="burger-icon">
-        <img src="ressources/logo/close-logo.svg" alt="icone burger close" class="burger-close">
+      <img src="ressources/logo/burger-logo.svg" alt="icone burger" class="burger-icon">
+      <img src="ressources/logo/close-logo.svg" alt="icone burger close" class="burger-close">
     </button>
     <nav class="burger-menu">
-        <ul class="burger-nav">
-            <li><a href="home.html">Accueil</a></li>
-            <hr class="nav__separator">
-            <li><a href="mode-demploi.html">Mode d'emploi</a></li>
-            <hr class="nav__separator">
-            <li><a href="trouver-un-velib.html">Trouver un velib</a></li>
-            <hr class="nav__separator">
-            <li><a href="calculateur.html">Calculateur</a></li>
-            <hr class="nav__separator">
-            <li><a href="a-propos.html">À propos</a></li>
-            <hr class="nav__separator">
-            <li><a href="contact.html" class="active">Contact</a></li>
-            <hr class="nav__separator">
-        </ul>
+      <ul class="burger-nav">
+        <li><a href="home.html">Accueil</a></li>
+        <hr class="nav__separator">
+        <li><a href="mode-demploi.html">Mode d'emploi</a></li>
+        <hr class="nav__separator">
+        <li><a href="trouver-un-velib.html">Trouver un velib</a></li>
+        <hr class="nav__separator">
+        <li><a href="calculateur.html">Calculateur</a></li>
+        <hr class="nav__separator">
+        <li><a href="a-propos.html">À propos</a></li>
+        <hr class="nav__separator">
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <hr class="nav__separator">
+      </ul>
     </nav>
-        <!-- Menu Desktop -->
-<nav class="desktop-menu">
-    <ul class="ul-nav-header">
+    <!-- Menu Desktop -->
+    <nav class="desktop-menu">
+      <ul class="ul-nav-header">
         <li><a href="home.html">Accueil</a></li>
         <li><a href="mode-demploi.html">Mode d'emploi</a></li>
         <li><a href="trouver-un-velib.html">Trouver un velib</a></li>
         <li><a href="calculateur.html">Calculateur</a></li>
         <li><a href="a-propos.html">À propos</a></li>
         <li><a href="contact.html" class="active">Contact</a></li>
-    </ul>
-</nav>
-</header>
+      </ul>
+    </nav>
+  </header>
 
-  <main class="main__contact">
-    <section class="contact">
-      <h1>Contactez-nous</h1>
+  <!-- Body Desktop -->
+  <div class="version_desktop_contact">
 
-      <div class="rond-vert">
-        <img src="/ressources/images/rond-creux-vert-darker.svg" alt="">
-      </div>
+    <main class="main__contact">
+      <section class="contact">
+        <h1>Contactez-nous</h1>
 
-      <form class="contact__flex" action="#">
-
-        <div class="contact__info">
-          <div class="contact__info__champs">
-            <label class="corpsdetexte" for="prenom">Prénom</label>
-            <input class="corpsdetexte" type="text" name="Prénom" id="prenom" placeholder="Prénom">
-          </div>
-
-          <div class="contact__info__champs">
-            <label class="corpsdetexte" for="nom">Nom</label>
-            <input class="corpsdetexte" type="text" name="Nom" id="nom" placeholder="Nom">
-          </div>
+        <div class="rond-vert">
+          <img src="/ressources/images/rond-creux-vert-darker.svg" alt="">
         </div>
 
-        <div class="contact__info">
-          <div class="contact__info__champs">
-            <label class="corpsdetexte" for="mail">Votre email</label>
-            <input class="corpsdetexte" type="email" name="Votre email" id="mail" placeholder="votre@email.com">
+        <form class="contact__flex" action="#">
+
+          <div class="contact__info">
+            <div class="contact__info__champs">
+              <label class="corpsdetexte" for="prenom">Prénom</label>
+              <input class="corpsdetexte" type="text" name="Prénom" id="prenom" placeholder="Prénom">
+            </div>
+
+            <div class="contact__info__champs">
+              <label class="corpsdetexte" for="nom">Nom</label>
+              <input class="corpsdetexte" type="text" name="Nom" id="nom" placeholder="Nom">
+            </div>
           </div>
 
-          <div class="contact__info__champs">
-            <label class="corpsdetexte" for="tel">Téléphone</label>
-            <input class="corpsdetexte" type="number" name="Téléphone" id="tel" placeholder="Numéro">
+          <div class="contact__info">
+            <div class="contact__info__champs">
+              <label class="corpsdetexte" for="mail">Votre email</label>
+              <input class="corpsdetexte" type="email" name="Votre email" id="mail" placeholder="votre@email.com">
+            </div>
+
+            <div class="contact__info__champs">
+              <label class="corpsdetexte" for="tel">Téléphone</label>
+              <input class="corpsdetexte" type="number" name="Téléphone" id="tel" placeholder="Numéro">
+            </div>
+
+
           </div>
 
+          <div class="contact__info">
+            <div class="contact__info__champs--fullwidht">
+              <label class="corpsdetexte" for="message">Votre message</label>
+              <input class="corpsdetexte" type="textarea" name="Votre message" id="message" placeholder="Message">
+            </div>
+          </div>
 
+          <input class="button_1" type="button" value="Commencer">
+
+        </form>
+
+
+      </section>
+    </main>
+    <!-- Body Desktop -->
+  </div>
+
+  <!-- Body Mobile -->
+  <div class="version_mobile_contact">
+    <main class="main__contact_mobile">
+      <section class="contact">
+        <h1>Contactez-nous</h1>
+
+        <div class="rond-vert">
+          <img src="/ressources/images/rond-creux-vert-darker.svg" alt="">
         </div>
 
-        <div class="contact__info">
-          <div class="contact__info__champs--fullwidht">
-            <label class="corpsdetexte" for="message">Votre message</label>
-            <input class="corpsdetexte" type="textarea" name="Votre message" id="message" placeholder="Message">
+        <form class="contact__flex" action="#">
+          <div class="contact_flex_mobile">
+            <div class="en-dessous_contact">
+              <div class="contact__info">
+                <div>
+                  <div class="contact__info__champs">
+                    <label class="corpsdetexte" for="mail">Votre email</label>
+                    <input class="corpsdetexte" type="email" name="Votre email" id="mail" placeholder="votre@email.com">
+                  </div>
+
+                  <div class="contact__info__champs">
+                    <label class="corpsdetexte" for="tel">Téléphone</label>
+                    <input class="corpsdetexte" type="number" name="Téléphone" id="tel" placeholder="Numéro">
+                  </div>
+                </div>
+              </div>
+              <div class="face-a-face_contact">
+                <div class="contact__info">
+                  <div class="contact__info__champs">
+                    <label class="corpsdetexte" for="nom">Nom</label>
+                    <input class="corpsdetexte" type="text" name="Nom" id="nom" placeholder="Nom">
+                  </div>
+
+
+                  <div class="contact__info__champs">
+                    <label class="corpsdetexte" for="prenom">Prénom</label>
+                    <input class="corpsdetexte" type="text" name="Prénom" id="prenom" placeholder="Prénom">
+                  </div>
+
+
+                </div>
+              </div>
+
+            </div>
+
+            <div class="contact__info">
+              <div class="contact__info__champs--fullwidht">
+                <label class="corpsdetexte" for="message">Votre message</label>
+                <input class="corpsdetexte" type="textarea" name="Votre message" id="message" placeholder="Message">
+              </div>
+            </div>
           </div>
-        </div>
+          <input class="button_1" type="button" value="Envoyer">
 
-        <input class="button_1" type="button" value="Commencer">
-
-      </form>
+        </form>
 
 
-    </section>
-  </main>
+      </section>
+    </main>
+    <!-- Body Mobile -->
+  </div>
 
   <footer>
     <div>
@@ -128,6 +195,8 @@
 
     </div>
   </footer>
+
 </body>
 <script src="javascript/burger-menu.js"></script>
+
 </html>
