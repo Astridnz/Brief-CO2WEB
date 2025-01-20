@@ -12,17 +12,13 @@
   // pour positionner les images sur backcground : url + unités
   background:       url(/ressources/images/background-feuille1-calculateur.svg) top 0em left -7em,
                     url(/ressources/images/background-feuille2-calculateur.svg)bottom 5rem left -7rem,
-                    url(/ressources/images/rond-creux-vert-medium.svg) top 2rem right 4rem,
-                    url(/ressources/images/rond-creux-vert-light.svg) top 12rem right 7rem,
                     url(/ressources/images/background-feuille3-calculateur.svg) bottom 7rem right -6rem;
   background-repeat: no-repeat;
   // redimmensionnement des images
   background-size:  50% 50%,
                     45% 45%,
-                    15% 15%,
-                    10% 10%,
                     45% 45%;
-padding-bottom: 7rem;
+  padding-bottom: 7rem;
 
 }
 
@@ -33,10 +29,42 @@ padding-bottom: 7rem;
   
     .rond-vert{
       position: absolute;
-      top: 11em;
-      left: 90em;
-      object-fit: contain;
+      top: 7em;
+      left: 89em;
+      object-fit: none;
       z-index: 100;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      transform: scale(0.9);
+
+
+      .rond1{
+        transform: scale(0.9);
+        align-self: flex-end;
+      }
+
+      .rondvertical{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end; 
+        margin-left: -20px; 
+
+
+        .rond2{
+          margin-bottom: 40px; 
+        }
+        .rond3{
+          transform: scale(0.8); 
+          align-self: flex-end; 
+
+        }
+        .rond1 img, .rond2 img, .rond3 img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+    }
 
     }
   
